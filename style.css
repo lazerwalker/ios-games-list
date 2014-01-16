@@ -1,0 +1,117 @@
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+h1 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 60px;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+body {
+  color: #333;
+  font-family: "Lucida Grande";
+  font-size: 19px;
+  line-height: 1.8em;
+  margin: 0;
+  padding: 0;
+
+}
+
+hr {
+  background-color: rgba(0, 0, 0, 0.2);
+  border:0;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+.section {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: 0;
+}
+
+.header .inner {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.header {
+  background-color: #BEF2B3;
+}
+
+.header .rules {
+  padding-top: 1.5em;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.solo {
+  background-color: #FCF5B1;
+}
+
+.async {
+  background-color: #B1DAFC;
+}
+
+.local {
+  background-color: #FCB1B1;
+}
+
+.other {
+  background-color: #BEF2B3;
+}
+
+a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.inner {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+img.icon {
+  border-radius: 20px;
+  float: left;
+  height: 100px;
+  margin-right: 20px;
+  vertical-align: middle;
+  width: 100px;
+}
+
+div {
+  clear: both;
+}
