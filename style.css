@@ -6,6 +6,7 @@ h1 {
   font-family: "Myriad Pro", sans-serif;
   font-size: 60px;
   margin-bottom: 0.5em;
+  line-height: 100%;
 }
 
 h2 {
@@ -28,7 +29,6 @@ body {
   line-height: 1.8em;
   margin: 0;
   padding: 0;
-
 }
 
 hr {
@@ -40,16 +40,11 @@ hr {
   width: 80%;
 }
 
-.section {
-  padding-left: 20%;
-  padding-right: 20%;
-  margin: 0;
-}
-
 .header .inner {
   padding-top: 50px;
   padding-bottom: 30px;
 }
+
 
 .header {
   background-color: #BEF2B3;
@@ -97,10 +92,12 @@ p {
 .inner {
   background-color: rgba(255, 255, 255, 0.6);
   margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 img.icon {
@@ -114,4 +111,18 @@ img.icon {
 
 div {
   clear: both;
+}
+
+@media only screen and (max-width: 1024px) {
+  .inner {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
