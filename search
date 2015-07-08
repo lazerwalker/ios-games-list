@@ -1,0 +1,37 @@
+#!/usr/local/bin/node
+
+// Usage: "search --term [SEARCHTERM] [--all]" (or "search [SEARCHTERM]")
+// Returns 1 result by default, --all returns all
+
+var request = require('request')
+var argv = require('minimist')(process.argv.slice(2))
+
+function print(result) {
+    console.log(result.name +
+        "\nby " + result.author +
+        "\ni: " + result.icon + 
+        "\nu: " + result.url + "\n");
+}
+
+if (!argv.term) argv.term = process.argv[2]
+
+var entity = (argv.ipad ? "iPadSoftware" : "software")
+var url = "https://itunes.apple.com/search?media=software&entity=" + entity + "&term=" + argv.term
+request(url, function(err, response, body) {
+    var json = JSON.parse(body)
+    var results = json.results.map(function (result) {
+        return {
+            name: result.trackName,
+            author: result.sellerName,
+            icon: result["artworkUrl100"],
+            url: result.trackViewUrl
+        }
+    })
+
+    if (argv.all) {
+        results.forEach(print)
+    } else {
+        print(results[0])
+    }
+
+});
