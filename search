@@ -13,6 +13,10 @@ function print(result) {
         "\nu: " + result.url + "\n");
 }
 
+function printHTML(result) {
+    console.log("\t<div class='game'>\n\t\t<h3><a href='" + result.url + "'>" + result.name + "</a></h3>\n\t\t<a href='" + result.url + "'><img class='icon' src='" + result.icon + "'/></a>\n\t\t<p>DESCRIPTION</p>\n\t</div>\n");
+}
+
 if (!argv.term) argv.term = process.argv[2]
 
 var entity = (argv.ipad ? "iPadSoftware" : "software")
@@ -28,10 +32,11 @@ request(url, function(err, response, body) {
         }
     })
 
+    var printFn = (argv.html ? printHTML : print)
     if (argv.all) {
-        results.forEach(print)
+        results.forEach(printFn)
     } else {
-        print(results[0])
+        printFn(results[0])
     }
 
 });
