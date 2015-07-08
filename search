@@ -21,6 +21,12 @@ function printMiniHTML(result) {
     console.log("\t<li><a href='" + result.url + "'>" + result.name + "</a>: DESCRIPTION.</li>\n");
 }
 
+function printAll(result) {
+    print(result)
+    printHTML(result)
+    printMiniHTML(result)
+}
+
 if (!argv.term) argv.term = process.argv[2]
 
 var entity = (argv.ipad ? "iPadSoftware" : "software")
@@ -36,13 +42,12 @@ request(url, function(err, response, body) {
         }
     })
 
-    var printFn = (argv.html ? printHTML : print)
-        printFn = (argv['mini-html'] ? printMiniHTML : printFn)
-
     if (argv.all) {
+        var printFn = (argv.html ? printHTML : print)
+            printFn = (argv['mini-html'] ? printMiniHTML : printFn)
         results.forEach(printFn)
     } else {
-        printFn(results[0])
+        printAll(results[0])
     }
 
 });
