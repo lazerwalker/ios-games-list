@@ -1,7 +1,12 @@
 #!/usr/local/bin/node
 
-// Usage: "search --term [SEARCHTERM] [--all]" (or "search [SEARCHTERM]")
-// Returns 1 result by default, --all returns all
+// Usage: "search [SEARCHTERM] [--all] [--ipad] [--html|--mini-html]"
+// By default, returns the first result for SEARCHTERM, formatted both for human consumption 
+// and with HTML strings for both parts of the list.
+//
+// --ipad: Searches iPad-only listings
+// --all: Returns all results, rather than just the first. Prints human-readable results by default.
+// --html/--mini-html: When using --all, instead formats results as HTML for the regular or bottom section
 
 var request = require('request')
 var argv = require('minimist')(process.argv.slice(2))
