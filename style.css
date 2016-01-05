@@ -83,6 +83,11 @@ li {
   background-color: #BEF2B3;
 }
 
+input {
+  margin: 15px;
+  vertical-align: middle;
+}
+
 a {
   color: #333;
   font-weight: bold;
