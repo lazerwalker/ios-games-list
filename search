@@ -11,6 +11,8 @@
 var request = require('request')
 var argv = require('minimist')(process.argv.slice(2))
 
+var affiliateTag = "1010laM5"
+
 function print(result) {
     console.log(result.name +
         "\nby " + result.author +
@@ -19,11 +21,12 @@ function print(result) {
 }
 
 function printHTML(result) {
-    console.log("\t<div class='game'>\n\t\t<h3><a href='" + result.url + "'>" + result.name + "</a></h3>\n\t\t<a href='" + result.url + "'><img class='icon' src='" + result.icon + "'/></a>\n\t\t<p>DESCRIPTION</p>\n\t</div>\n");
+    var slug = result.name.replace(/\s/g, "-").replace(/[^A-Za-z0-9\-]/g,"").toLowerCase();
+    console.log("\t<div class='game' id='" + slug + "'>\n\t\t<h3><a href='" + result.url + "'>" + result.name + "</a></h3>\n\t\t<a href='" + result.url + "'><img class='icon' src='" + result.icon + "'/></a>\n\t\t<p>DESCRIPTION</p>\n\t</div>\n");
 }
 
 function printMiniHTML(result) {
-    console.log("\t<li><a href='" + result.url + "'>" + result.name + "</a>: DESCRIPTION.</li>\n");
+    console.log("\t<li class=\"\"><a href='" + result.url + "'>" + result.name + "</a>: DESCRIPTION.</li>\n");
 }
 
 function printAll(result) {
@@ -43,7 +46,7 @@ request(url, function(err, response, body) {
             name: result.trackName,
             author: result.sellerName,
             icon: result["artworkUrl100"],
-            url: result.trackViewUrl
+            url: result.trackViewUrl + "&at=" + affiliateTag
         }
     })
 
