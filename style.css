@@ -67,7 +67,7 @@ li {
   margin-top: 1em;
 }
 
-.solo {
+.section.solo {
   background-color: #FCF5B1;
 }
 
@@ -75,7 +75,7 @@ li {
   background-color: #B1DAFC;
 }
 
-.local {
+.section.local {
   background-color: #FCB1B1;
 }
 
