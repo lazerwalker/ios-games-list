@@ -40,14 +40,19 @@
 
   <h3 class="rules" style="margin-bottom: 0.5em">Show Me Games With:</h3>
 
-  <input type="checkbox" name="action" id="action" checked><label for="action">Action</label>
-  <input type="checkbox" name="atmosphere" id="atmosphere" checked><label for="atmosphere">Atmosphere</label>  
-  <input type="checkbox" name="puzzle" id="puzzle" checked><label for="puzzle">Puzzles</label>
-  <input type="checkbox" name="story" id="story" checked><label for="story">Story</label>
-  <input type="checkbox" name="strategy" id="strategy" checked><label for="strategy">Strategy</label>
-  <input type="checkbox" name="words" id="words" checked><label for="words">Words</label>
-
+  <input type="checkbox" class="filter" name="action" id="action" checked><label for="action">Action</label>
+  <input type="checkbox" class="filter" name="atmosphere" id="atmosphere" checked><label for="atmosphere">Atmosphere</label>  
+  <input type="checkbox" class="filter" name="puzzle" id="puzzle" checked><label for="puzzle">Puzzles</label>
+  <input type="checkbox" class="filter" name="story" id="story" checked><label for="story">Story</label>
+  <input type="checkbox" class="filter" name="strategy" id="strategy" checked><label for="strategy">Strategy</label>
+  <input type="checkbox" class="filter" name="words" id="words" checked><label for="words">Words</label>
   <p style='font-size: 0.9em'>(Checking multiple boxes means you'll see games that match <em>any</em> of the filters)</p>
+
+  <h3 class="rules" style="margin-bottom: 0.5em">Show Me Games For:</h3>
+
+  <input type="checkbox" class="platform" name="iphone" id="iphone" checked><label for="iphone">iPhone</label>
+  <input type="checkbox" class="platform" name="ipad" id="ipad" checked><label for="ipad">iPad</label>
+
 
 
 </div>
@@ -57,332 +62,332 @@
   <div class='inner'>
   <h2>Single-Player Games</h2>
 
-  <div class='game atmosphere action' id='altos-adventure'>
+  <div class='game atmosphere action solo both-platforms' id='altos-adventure'>
     <h3><a href='https://geo.itunes.apple.com/us/app/altos-adventure/id950812012?mt=8&at=1010laM5'>Alto's Adventure</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/altos-adventure/id950812012?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple69/v4/2f/5f/d3/2f5fd3b0-b25a-78f5-9612-08f0cfe82b09/source/100x100bb.jpg'/></a>
     <p>One of those game worlds that's a pleasure to merely inhabit. As an infinite runner, it's okay; as an experience trying to capture the beauty of snowboarding through pristine wilderness, it's incomparable.</p>
   </div>
 
-  <div class='game story words' id='80-days'>
+  <div class='game story words solo both-platforms' id='80-days'>
     <h3><a href="https://geo.itunes.apple.com/us/app/80-days/id892812659?mt=8&at=1010laM5">80 Days</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/80-days/id892812659?mt=8&at=1010laM5"><img class='icon' src="http://a286.phobos.apple.com/us/r30/Purple3/v4/61/a1/b6/61a1b6db-5eee-4211-867f-e6b96d9917ed/mzl.mifohjao.png"/></a>
     <p>An interactive fiction adaptation of "Around the World in Eighty Days", but that's selling it short. Phenomentally crafted, and so expansive and freeform it's possible to have multiple playthroughs without reading the same thing twice.</p>
   </div>
 
-  <div class='game puzzle' id='868-hack'>
+  <div class='game puzzle solo both-platforms' id='868-hack'>
     <h3><a href="https://geo.itunes.apple.com/us/app/868-hack/id635749911?mt=8&at=1010laM5">868-HACK</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/868-hack/id635749911?mt=8&at=1010laM5"><img class='icon' src="http://a1763.phobos.apple.com/us/r30/Purple6/v4/bb/8f/b8/bb8fb888-3426-34f7-f0fe-07ccafa66613/mzl.twplhqtl.png"/></a>
     <p>The most elegant roguelike I've ever played. Every single move you take is the difference between winning and losing; the stakes are always sky-high. It's unapproachable and unwelcoming, but well worth your time.</p>
   </div>
 
-  <div class='game story strategy' id='banner-saga'>
+  <div class='game story strategy solo both-platforms' id='banner-saga'>
     <h3><a href="https://geo.itunes.apple.com/us/app/banner-saga/id911006986?mt=8&at=1010laM5">Banner Saga</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/banner-saga/id911006986?mt=8&at=1010laM5"><img class='icon' src="http://a414.phobos.apple.com/us/r30/Purple4/v4/e1/b5/51/e1b55192-b976-6bd9-8462-c2569994d18a/pr_source.png?downloadKey=1413349397_51b4427ff5898ac68ee65bf344c52e07"/></a>
     <p>This truly is a "saga" in the literal sense. One part tactical RPG, one part choice-based interactive fiction, it strikes an interesting balance. It's available for PC, but feels like it was meant for the iPad.</p>
   </div>
-  <div class='game puzzle story words' id='blackbar'>
+  <div class='game puzzle story words both-platforms' id='blackbar'>
     <h3><a href="https://geo.itunes.apple.com/us/app/blackbar/id672002602?mt=8&at=1010laM5">Blackbar</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/blackbar/id672002602?mt=8&at=1010laM5"><img class='icon' src="http://a1557.phobos.apple.com/us/r30/Purple/v4/81/bc/f3/81bcf36f-4021-99ed-e65a-e9fa5e198a98/mzl.ikqexhro.png"/></a>
     <p>Set in a vague dystopian future, Blackbar tells the story of a resistance movement fighting censorship, by means of solving censorship puzzles. It's short, sweet, and strikes the right balance of story and puzzle.</p>
   </div>
 
-  <div class='game strategy' id='brogue'>
+  <div class='game strategy solo ipad' id='brogue'>
     <h3><a href='https://geo.itunes.apple.com/us/app/brogue/id613921309?mt=8&at=1010laM5'>Brogue</a> (iPad)</h3>
     <a href='https://geo.itunes.apple.com/us/app/brogue/id613921309?mt=8&at=1010laM5'><img class='icon' src='http://is3.mzstatic.com/image/thumb/Purple4/v4/17/30/f2/1730f2f2-73de-7466-06c8-42ed2f86df9c/source/100x100bb.jpg'/></a>
     <p>A classic Roguelike known for its relatively gentle difficulty curve and beautiful ASCII graphics. Brogue's official iPad port is the only traditional desktop roguelike I've seen really work on iOS without an external keyboard.</p>
   </div>
 
-  <div class='game puzzle' id='corrypt'>
+  <div class='game puzzle solo both-platforms' id='corrypt'>
     <h3><a href="https://geo.itunes.apple.com/us/app/corrypt/id588935336?mt=8&at=1010laM5">Corrypt</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/corrypt/id588935336?mt=8&at=1010laM5"><img class='icon' src="http://a346.phobos.apple.com/us/r30/Purple2/v4/04/57/0e/04570e13-f1aa-35c0-b694-ce0671bd0e3e/mzl.pcdcjlnh.png"/></a>
     <p>A Sokoban-style block puzzle whose rules quickly start to collapse in on themselves. I've never played a puzzle game that so successfully managed to convey meaning through pure mechanics. Sheer brilliance.</p>
   </div>
 
-  <div class='game action' id='desert-golfing'>
+  <div class='game action solo both-platforms' id='desert-golfing'>
     <h3><a href="https://geo.itunes.apple.com/us/app/desert-golfing/id902062673?mt=8&at=1010laM5">Desert Golfing</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/desert-golfing/id902062673?mt=8&at=1010laM5"><img class='icon' src="http://is2.mzstatic.com/image/pf/us/r30/Purple3/v4/3b/1c/26/3b1c2681-667c-1cc0-0242-d1c8cfa00b12/mzl.pwuazpbe.jpg"/></a>
     <p>A punk-y minimalist distillation of Angry Birds-style controls into a golf game. You'll find no achievements or leaderboards or fancy graphics here, just a focused, distilled, addictive version of golf that seems to go on forever.</p>
   </div>
 
-  <div class='game story puzzle words' id='device-6'>
+  <div class='game story puzzle words solo both-platforms' id='device-6'>
     <h3><a href="https://geo.itunes.apple.com/us/app/device-6/id680366065?mt=8&at=1010laM5">Device 6</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/device-6/id680366065?mt=8&at=1010laM5"><img class='icon' src="http://a548.phobos.apple.com/us/r30/Purple/v4/aa/9e/5e/aa9e5e1a-f2ef-5151-cd00-de6f1697f380/mzl.kwmwqgox.png"/></a>
     <p>An adventure game that's equal parts Alice in Wonderland and The Prisoner. Even though it's largely text-based, it takes advantage of the iOS form factor better than most games. Some of the puzzles are a bit obtuse.</p>
   </div>
 
-  <div class='game action' id='downwell'>
+  <div class='game action solo both-platforms' id='downwell'>
     <h3><a href='https://geo.itunes.apple.com/us/app/downwell/id1032708262?mt=8&at=1010laM5'>Downwell</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/downwell/id1032708262?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/thumb/Purple7/v4/1e/ed/5b/1eed5ba7-e79d-1316-1210-f503eb4c107c/pr_source.png/0x0ss-85.jpg'/></a>
     <p>Downwell is a minimalist roguelike platformer about descending a well, armed only with a pair of trusty gunboots. Comparisons are often drawn to the masterpiece <strong>Spelunky</strong>, and they're not undeserved. Easily the best action game I've played on iOS.</p>
   </div>
 
-  <div class='game strategy' id='dream-quest'>
+  <div class='game strategy solo ipad' id='dream-quest'>
     <h3><a href="https://geo.itunes.apple.com/us/app/dream-quest/id870227884?mt=8&at=1010laM5">Dream Quest</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/dream-quest/id870227884?mt=8&at=1010laM5"><img class='icon' src="http://a53.phobos.apple.com/us/r30/Purple3/v4/f2/57/ac/f257ac8c-4ac8-de8c-cabe-92e85fc3fee5/mzl.zhmnpzli.png"/></a>
     <p>Dream Quest is a roguelike deck-building game. If you can look past its embarassingly-amateurish graphics, you'll find a game with stunning depth and brutal difficulty. Be sure to check out the <a href="http://www.pockettactics.com/features/winning-ugly-still-winning-peter-whalens-guide-dream-quest/">strategy guide</a> written by the creator.</p>
   </div>
 
-  <div class='game puzzle' id='drop7'>
+  <div class='game puzzle solo both-platforms' id='drop7'>
     <h3><a href='https://geo.itunes.apple.com/us/app/drop7/id425242132?mt=8&at=1010laM5'>Drop7</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/drop7/id425242132?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/pf/us/r30/Purple3/v4/56/4e/aa/564eaadf-f023-5ab7-42f4-abbbd72c5ba8/mzl.guwoznya.png'/></a>
     <p>An iOS classic, Drop 7 is an addictive numbers-based puzzle game that feels like it's existed forever.</p>
   </div>
 
-  <div class='game puzzle' id='dungeon-raid'>
+  <div class='game puzzle solo both-platforms' id='dungeon-raid'>
     <h3><a href="https://geo.itunes.apple.com/us/app/dungeon-raid/id403090531?mt=8&at=1010laM5">Dungeon Raid</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/dungeon-raid/id403090531?mt=8&at=1010laM5"><img class='icon' src="http://a244.phobos.apple.com/us/r30/Purple/e4/54/31/mzl.ubyhpedm.png"/></a>
     <p>Dungeon Raid was one of the earliest examples of the iOS trend of layering roguelike mechanics on top of a Match-3 game. A deep levelling system, a cool combo mechanic, and a clever system for unlocks give it longevity.</p>
   </div>
 
-  <div class='game puzzle' id='english-country-tune'>
+  <div class='game puzzle solo both-platforms' id='english-country-tune'>
     <h3><a href='https://geo.itunes.apple.com/us/app/english-country-tune/id476962614?mt=8&at=1010laM5'>English Country Tune</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/english-country-tune/id476962614?mt=8&at=1010laM5'><img class='icon' src='http://is3.mzstatic.com/image/pf/us/r30/Purple/c1/87/ce/mzl.gewnrnxr.png'/></a>
     <p>A puzzle game that seems fairly straight forward at first, if a bit tricky, it eventually folds in on itself in a series of mind-blowingly fantastic moments. One of the most interesting puzzle games you'll ever play.</p>
   </div>
 
-  <div class='game strategy' id='faster-than-light'>
+  <div class='game strategy solo ipad' id='faster-than-light'>
     <h3><a href="https://geo.itunes.apple.com/us/app/ftl-faster-than-light/id833951143?mt=8&at=1010laM5">Faster Than Light</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/ftl-faster-than-light/id833951143?mt=8&at=1010laM5"><img class='icon' src="http://a154.phobos.apple.com/us/r30/Purple4/v4/76/5d/db/765ddb36-a47e-12a3-dcbe-09d7c2a3f1f9/mzl.fcrqvmhg.png"/></a>
     <p>FTL is a truly fantastic space-themed roguelike. Pilot a ship through the depths of space, micromanaging each of your crew members as you combat enemy ship after enemy ship. Originally built for PC, but it works far better on iPad. </p>
   </div>
 
 
-  <div class='game puzzle action' id='the-firm'>
+  <div class='game puzzle action solo both-platforms' id='the-firm'>
     <h3><a href="https://geo.itunes.apple.com/us/app/the-firm/id883108531?mt=8&at=1010laM5">The Firm</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/the-firm/id883108531?mt=8&at=1010laM5"><img class='icon' src="http://a1008.phobos.apple.com/us/r30/Purple4/v4/cc/f4/1a/ccf41a5e-345f-a512-f628-97e113fc6c09/mzl.zdnzxjkg.png"/></a>
     <p>A small game wrapping a stock trading theme around a Tinder-like swipe interaction. It does a great job of slowly giving you more to do until you're managing dozens of different rules in your head under time pressure.</p>
   </div>
 
-  <div class='game puzzle atmosphere' id='a-good-snowman-is-hard-to-build'>
+  <div class='game puzzle atmosphere solo both-platforms' id='a-good-snowman-is-hard-to-build'>
     <h3><a href='https://geo.itunes.apple.com/us/app/a-good-snowman-is-hard-to-build/id1040930654?mt=8&at=1010laM5'>A Good Snowman Is Hard To Build</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/a-good-snowman-is-hard-to-build/id1040930654?mt=8&at=1010laM5'><img class='icon' src='http://is2.mzstatic.com/image/thumb/Purple69/v4/b0/2c/5d/b02c5daf-dc29-4e5e-4b37-5e1885f4bc71/source/100x100bb.jpg'/></a>
     <p>One part deviously-hard Sokoban-style puzzler, one part adorable game where you get to hug snowmen.</p>
   </div>
 
-  <div class='game puzzle story atmosphere' id='grayout'>
+  <div class='game puzzle story atmosphere solo both-platforms' id='grayout'>
     <h3><a href='https://itunes.apple.com/us/app/grayout/id1023152763?mt=8&uo=4&at=1010laM5'>Grayout</a></h3>
     <a href='https://itunes.apple.com/us/app/grayout/id1023152763?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is3.mzstatic.com/image/thumb/Purple49/v4/8a/8e/a6/8a8ea6c1-0054-988e-16d2-7d825218e6e9/source/100x100bb.jpg'/></a>
     <p>A sequel of sorts to <a href="#blackbar">Blackbar</a>, Grayout continues its predecessor's trend of being a lovely hybrid puzzle/story game with a uniquely tight connection between mechanic and story.</p>
   </div>
 
-  <div class='game puzzle story' id='her-story'>
+  <div class='game puzzle story solo ipad' id='her-story'>
     <h3><a href="https://geo.itunes.apple.com/us/app/her-story/id952658953?mt=8&at=1010laM5">Her Story</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/her-story/id952658953?mt=8&at=1010laM5"><img class='icon' src="http://is1.mzstatic.com/image/pf/us/r30/Purple1/v4/f9/50/21/f950219d-90d5-a804-077c-459d6284ffbe/mzl.ngujptgp.png"/></a>
     <p>A phenomenal FMV game where you explore the circumstances surrounding a murder by searching and viewing old police interview footage. I don't want to give anything away; if you're at all interested in narrative games, Her Story is more than worth playing.</p>
   </div>
 
-  <div class='game strategy' id='hearthstone'>
+  <div class='game strategy both-platforms online' id='hearthstone'>
     <h3><a href="https://geo.itunes.apple.com/us/app/hearthstone-heroes-warcraft/id625257520?mt=8&at=1010laM5">Hearthstone</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/hearthstone-heroes-warcraft/id625257520?mt=8&at=1010laM5"><img class='icon' src="http://a1285.phobos.apple.com/us/r30/Purple/v4/8a/8e/d4/8a8ed418-e543-3cc2-c65f-7393bed7fac2/mzl.jwceymhs.png"/></a>
     <p>Blizzard's F2P deck-building card game. It's heavily inspired by Magic, but far simpler to grasp. A great example of doing F2P right, and a fantastic iOS port. It needs an Internet connection to play, even just against the AI.</p>
   </div>
 
-  <div class='game action' id='helix'>
+  <div class='game action solo both-platforms' id='helix'>
     <h3><a href="https://geo.itunes.apple.com/us/app/helix/id562550427?mt=8&at=1010laM5">Helix</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/helix/id562550427?mt=8&at=1010laM5"><img class='icon' src="http://is3.mzstatic.com/image/pf/us/r30/Purple1/v4/e8/d9/0e/e8d90e57-5b70-f9f8-4563-afeeb76a2aa2/mzl.zdxguwgi.png"/></a>
     <p>A fantastic twitchy action game by Michael Brough. Its touch controls – you're trying to draw loops around enemies to kill them – works effortly in ways that most games don't.</p>
   </div>
 
-  <div class='game puzzle' id='helsings-fire'>
+  <div class='game puzzle solo iphone' id='helsings-fire'>
     <h3><a href="https://geo.itunes.apple.com/us/app/helsings-fire/id380290526?mt=8&at=1010laM5">Helsing's Fire</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/helsings-fire/id380290526?mt=8&at=1010laM5"><img class='icon' src="http://a272.phobos.apple.com/us/r30/Purple/0e/8f/7b/mzi.sxroktjf.png"/></a>
     <p>A unique puzzle game combining a pretty cool lighting/shadow mechanic with a slick Victorian-horror aesthetic. It hasn't been updated for 4-inch screens, but it's worth playing even with letterboxing.</p>
   </div>
 
-  <div class='game puzzle strategy' id='hoplite'>
+  <div class='game puzzle strategy solo both-platforms' id='hoplite'>
     <h3><a href="https://geo.itunes.apple.com/us/app/hoplite/id782438457?mt=8&at=1010laM5">Hoplite</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/hoplite/id782438457?mt=8&at=1010laM5"><img class='icon' src="http://a213.phobos.apple.com/us/r30/Purple/v4/2a/f2/c4/2af2c42b-c870-46bc-c3e6-a544cdf34b76/mzl.daxifsbm.png"/></a>
     <p>A pared-down hex-based turn-based strategy game with roguelike mechanics layered on top. It's chess-like in the way that simple movement patterns elegantly combine to form higher-level strategies.</p>
   </div>
 
-  <div class='game action puzzle' id='hundreds'>
+  <div class='game action puzzle solo local both-platforms' id='hundreds'>
     <h3><a href="https://geo.itunes.apple.com/us/app/hundreds/id493536432?mt=8&at=1010laM5">Hundreds</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/hundreds/id493536432?mt=8&at=1010laM5"><img class='icon' src="http://a65.phobos.apple.com/us/r30/Purple/v4/c1/42/59/c1425921-3637-92c0-7112-28c63ed370c3/mzl.nddrfchp.png"/></a>
     <p>The perfect combination of reflex-based gameplay and strategy: although the game demands precise finger dexterity, you can deliberate a long time before acting. It also works great as a collaborative multiplayer game on iPad!</p>
   </div>
 
-  <div class='game action' id='kero-blaster'>
+  <div class='game action iphone solo' id='kero-blaster'>
     <h3><a href='https://geo.itunes.apple.com/us/app/keroblaster/id867598817?mt=8&at=1010laM5'>Kero Blaster</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/keroblaster/id867598817?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/pf/us/r30/Purple6/v4/db/02/ee/db02eed9-98b6-319f-4025-0153f2ce76c2/mzl.hfsdxlzp.png'/></a>
     <p>By Daisuke Amaya (of "Cave Story" fame), Kero Blaster is a jump-and-gun platformer with fantastic touch-based controls. It's also completely adorable.</p>
   </div>
 
-  <div class='game strategy story words' id='king-of-dragon-pass'>
+  <div class='game strategy story words solo ipad iphone' id='king-of-dragon-pass'>
     <h3><a href="https://geo.itunes.apple.com/us/app/king-of-dragon-pass/id335545504?mt=8&at=1010laM5">King of Dragon Pass</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/king-of-dragon-pass/id335545504?mt=8&at=1010laM5"><img class='icon' src="http://a1257.phobos.apple.com/us/r30/Purple6/v4/c7/e9/d4/c7e9d403-31bd-feb6-a0bf-74ecb7d73271/mzl.lqxbxdxg.png"/></a>
     <p>In this civilization sim, you're in charge of a primitive tribe in a fantasy world. Every action you take has severe consequences on what happens next; the sheer depth of the text-based simulation is impressive.</p>
   </div>
 
-  <div class='game atmosphere puzzle' id='lara-croft-go'>
+  <div class='game atmosphere puzzle solo both-platforms' id='lara-croft-go'>
     <h3><a href='https://geo.itunes.apple.com/us/app/lara-croft-go/id971304016?mt=8&at=1010laM5'>Lara Croft GO</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/lara-croft-go/id971304016?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple69/v4/9c/c8/e4/9cc8e43c-b52f-6d5c-1ac7-5ef8220e6845/source/100x100bb.jpg'/></a>
     <p>A clever turn-based puzzle game based on the Tomb Raider series. Wonderful puzzle design, and an absolutely lovely aesthetic.</p>
   </div>
 
-  <div class='game story action puzzle' id='lili'>
+  <div class='game story action puzzle solo both-platforms' id='lili'>
     <h3><a href='https://geo.itunes.apple.com/us/app/lili/id560692867?mt=8&at=1010laM5'>Lili</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/lili/id560692867?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/pf/us/r30/Purple6/v4/44/f6/9a/44f69af2-bfa6-c22a-8273-31c3db43c95d/mzl.zbisicig.png'/></a>
     <p>A quirky RPG/adventure game that has you climbing on the backs of mystical spirits to collect flowers. There are some F2P mechanics, which is frustrating for a paid game, but it's otherwise absolutely charming.</p>
   </div>
 
-  <div class='game puzzle story atmosphere' id='lumino-city'>
+  <div class='game puzzle story atmosphere solo ipad' id='lumino-city'>
     <h3><a href='https://geo.itunes.apple.com/us/app/lumino-city/id958604518?mt=8&at=1010laM5'>Lumino City</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/lumino-city/id958604518?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/thumb/Purple69/v4/d8/fb/54/d8fb5446-b157-2ace-015d-6f70eacdc7ee/source/100x100bb.jpg'/></a>
     <p>A charming point-and-click adventure game made entirely from papercraft models. Puzzles lean more towards standalone logic puzzles than traditional object hunts.</p>
   </div>
 
-  <div class='game puzzle atmosphere' id='monument-valley'>
+  <div class='game puzzle atmosphere solo both-platforms' id='monument-valley'>
     <h3><a href="https://geo.itunes.apple.com/us/app/monument-valley/id728293409?mt=8&at=1010laM5">Monument Valley</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/monument-valley/id728293409?mt=8&at=1010laM5"><img class='icon' src="http://a487.phobos.apple.com/us/r30/Purple6/v4/e5/13/99/e51399d1-d069-d1e3-3ef1-d8f1e463056b/mzl.ffrdsnvf.png"/></a>
     <p>A gorgeous Escher-inspired puzzle game. It's one of those games that isn't particularly challenging, but the act of playing it is an immensely serene and enjoyable experience.</p>
   </div>
 
-  <div class='game atmosphere' id='neko-atsume'>
+  <div class='game atmosphere solo both-platforms' id='neko-atsume'>
     <h3><a href='https://geo.itunes.apple.com/us/app/nekoatsume/id923917775?mt=8&at=1010laM5'>ねこあつめ (Neko Atsume)</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/nekoatsume/id923917775?mt=8&at=1010laM5'><img class='icon' src='http://a5.mzstatic.com/us/r30/Purple7/v4/a1/b4/c7/a1b4c75a-47ed-f989-afaf-0b6c01640ec4/icon350x350.jpeg'/></a>
     <p>The most relaxing game you'll ever play. Put out food and cat toys, come back later, and watch adorable cats play with them. Use the presents they give you to buy more toys. Rinse, repeat, and enjoy. In Japanese, but easy to figure out.</p>
   </div>
 
-  <div class='game puzzle atmosphere' id='oquonie'>
+  <div class='game puzzle atmosphere solo both-platforms' id='oquonie'>
     <h3><a href='https://geo.itunes.apple.com/us/app/oquonie/id819777958?mt=8&at=1010laM5'>Oquonie</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/oquonie/id819777958?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/pf/us/r30/Purple1/v4/52/e5/15/52e51584-1386-d37b-99d4-fb7d2242788f/pr_source.png'/></a>
     <p>An atmospheric dive into a bizarre world. Oquonie is a text-free adventure game that has you navigate  a confusing labyrinth, solving puzzles you only barely understand.</p>
   </div>
 
-  <div class='game atmosphere action' id='osmos'>
+  <div class='game atmosphere action solo both-platforms' id='osmos'>
     <h3><a href="https://geo.itunes.apple.com/us/app/osmos/id382991304?mt=8&at=1010laM5">Osmos</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/osmos/id382991304?mt=8&at=1010laM5"><img class='icon' src="http://a1429.phobos.apple.com/us/r30/Purple4/v4/f8/44/8a/f8448a14-8cbe-b400-64ad-d06076ec0e12/mzl.fquallzc.png"/></a>
     <p>The ultimate chill-out game. As a single-celled organism, your goal is to eat smaller organisms than you and avoid being eaten. This is a slow, meditative game that's perfect for a lazy afternoon. Be sure to wear headphones.</p>
   </div>
 
-  <div class='game atmosphere strategy story' id='out-there'>
+  <div class='game atmosphere strategy story solo ipad' id='out-there'>
     <h3><a href='https://geo.itunes.apple.com/us/app/out-there-o-edition/id799471892?mt=8&at=1010laM5'>Out There: Ω Edition</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/out-there-o-edition/id799471892?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/pf/us/r30/Purple5/v4/37/6f/0c/376f0cda-72a3-5d18-c2b9-df3ae9e54734/pr_source.png'/></a>
     <p>A super-atmospheric roguelike about traversing the emptiness of space in search of salvation. Much slower-paced than, say, <em>FTL</em>.</p>
   </div>
 
-  <div class='game action' id='pac-man-championship-edition-dx'>
+  <div class='game action solo both-platforms' id='pac-man-championship-edition-dx'>
     <h3><a href='https://geo.itunes.apple.com/us/app/pac-man-championship-edition/id997446291?mt=8&at=1010laM5'>Pac-Man Championship Edition DX</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/pac-man-championship-edition/id997446291?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/pf/us/r30/Purple7/v4/cb/74/0c/cb740c95-3d78-58e0-d2b2-7addea022950/pr_source.png'/></a>
     <p>A brilliant high-speed modern take on Pac-Man. After playing Pac-Man CE, the original game (or even newer Pac-Man games like <a href="https://geo.itunes.apple.com/us/app/pac-man-256-endless-arcade/id1002340615?mt=8&at=1010laM5">Pac-Man 256</a>) feel boring and antiquated. Its swipe controls are easily as playable as the console version.</p>
   </div>
 
-  <div class='game atmosphere action' id='papa-sangre'>
+  <div class='game atmosphere action solo iphone' id='papa-sangre'>
     <h3><a href="https://geo.itunes.apple.com/us/app/papa-sangre/id407536885?mt=8&at=1010laM5">Papa Sangre</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/papa-sangre/id407536885?mt=8&at=1010laM5"><img class='icon' src="http://a373.phobos.apple.com/us/r30/Purple6/v4/5e/ef/7d/5eef7dbb-1ca0-ef7c-3bdb-222d066e4d04/mzl.ntrfyijk.png"/></a>
     <p>A truly unique audio-only horror game that has you traversing the Land of the Dead. You navigate the game world using binaural sound to sense your surroundings. There's also a <a href="https://geo.itunes.apple.com/us/app/papa-sangre-ii/id710535349?mt=8&at=1010laM5">sequel</a>.</p>
   </div>
 
-  <div class='game action story puzzle' id='papers-please'>
+  <div class='game action story puzzle solo ipad' id='papers-please'>
     <h3><a href='https://geo.itunes.apple.com/us/app/papers-please/id935216956?mt=8&at=1010laM5'>Papers, Please</a> (iPad)</h3>
     <a href='https://geo.itunes.apple.com/us/app/papers-please/id935216956?mt=8&at=1010laM5'><img class='icon' src='http://is2.mzstatic.com/image/pf/us/r30/Purple1/v4/8d/24/36/8d243649-3481-d452-56d0-4f44a028de57/mzl.qjcnhxqo.png'/></a>
     <p>A game about being an immigration agent in a fictional Eastern Bloc state. It manages to somehow make the monotony of bureaucracy fun, while also layering in really interesting levels of narrative choice and social commentary.</p>
   </div>
-
-  <div class='game puzzle atmosphere' id='prune'>
+ 
+  <div class='game puzzle atmosphere solo both-platforms' id='prune'>
     <h3><a href='https://geo.itunes.apple.com/us/app/prune/id972319818?mt=8&at=1010laM5'>Prune</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/prune/id972319818?mt=8&at=1010laM5'><img class='icon' src='http://is3.mzstatic.com/image/pf/us/r30/Purple7/v4/3c/7e/3c/3c7e3cbe-da4d-b605-92a0-aaeafb3a91dc/mzl.rmujoqss.png'/></a>
     <p>A relaxing, meditative puzzle game about pruning a tree as it grows, <em>a la</em> a bonsai tree.</p>
   </div>
 
-  <div class='game puzzle action' id='rolando'>
+  <div class='game puzzle action solo iphone' id='rolando'>
     <h3><a href='https://geo.itunes.apple.com/us/app/rolando/id299461156?mt=8&at=1010laM5'>Rolando</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/rolando/id299461156?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/pf/us/r30/Purple/4b/2d/e4/mzl.ebjviiyk.tif'/></a>
     <p>An oldie but a goodie. Rolando is an adorable platformer that has you using (pitch-perfect) tilt controls to help cute little balls get home.</p>
   </div>
 
-  <div class='game puzzle story' id='the-room'>
+  <div class='game puzzle story solo ipad' id='the-room'>
     <h3><a href="https://geo.itunes.apple.com/us/app/the-room/id552039496?mt=8&at=1010laM5">The Room</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/the-room/id552039496?mt=8&at=1010laM5"><img class='icon' src="http://a295.phobos.apple.com/us/r30/Purple/v4/74/ac/41/74ac4185-36d5-fe95-468f-ed43947640f7/mzl.fvxbhdim.png"/></a>
     <p>A super-polished puzzle game that has you pushing and pulling at 3D objects to figure out their secrets. It has a fantastic otherworldly air of mystery that evokes Myst. Also check out its <a href="https://geo.itunes.apple.com/us/app/the-room-two/id667362389?mt=8&uo=4">two</a> <a href="https://geo.itunes.apple.com/us/app/the-room-three/id918054748?mt=8&at=1010laM5?mt=8&at=1010laM5">sequels</a>.</p>
   </div>
 
-  <div class='game puzzle story atmosphere' id='rusty-lake-hotel'>
+  <div class='game puzzle story atmosphere solo both-platforms' id='rusty-lake-hotel'>
     <h3><a href='https://geo.itunes.apple.com/us/app/rusty-lake-hotel/id1059911569?mt=8&at=1010laM5'>Rusty Lake Hotel</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/rusty-lake-hotel/id1059911569?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/thumb/Purple2/v4/bc/70/c7/bc70c7be-38e4-d92a-cef3-32e03d4cee16/source/100x100bb.jpg'/></a>
     <p>A Flash-style escape room game with a delightfully macabre story. The puzzle design is clever, if not too difficult, but it's the charmingly dark atmosphere that totally sells it.</p>
   </div>
 
-  <div class='game strategy atmosphere' id='rymdkapsel'>
+  <div class='game strategy atmosphere solo both-platforms' id='rymdkapsel'>
     <h3><a href="https://geo.itunes.apple.com/us/app/rymdkapsel/id663547503?mt=8&at=1010laM5">Rymdkapsel</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/rymdkapsel/id663547503?mt=8&at=1010laM5"><img class='icon' src="http://a49.phobos.apple.com/us/r30/Purple/v4/e2/50/90/e2509015-e53b-e071-fcc1-1aa138468a97/mzl.afzxtghl.png"/></a>
     <p>A minimalist take on tower defense and real-time strategy games. Both the visuals and the mechanics themselves have been pared down to the bare minimum to create a stunning experience.</p>
   </div>
 
-  <div class='game atmosphere' id='seabeard'>
+  <div class='game atmosphere solo online both-platforms' id='seabeard'>
     <h3><a href='https://geo.itunes.apple.com/us/app/seabeard/id913754563?mt=8&at=1010laM5'>Seabeard</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/seabeard/id913754563?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/pf/us/r30/Purple6/v4/5f/7d/e6/5f7de633-fa93-b3d7-6090-70e9dd02782e/mzl.ntfooezw.png'/></a>
     <p>Imagine Nintendo's <strong>Animal Crossing</strong>, but with the aesthetic of <strong>Zelda: Wind Waker</strong> and about three times as many things to do. Absolutely charming, so long as you can put up with minimally-aggressive F2P mechanics.</p>
   </div>
 
-  <div class='game puzzle' id='the-sequence'>
+  <div class='game puzzle solo both-platforms' id='the-sequence'>
     <h3><a href='https://geo.itunes.apple.com/us/app/the-sequence/id1035217840?mt=8&at=1010laM5'>[the Sequence]</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/the-sequence/id1035217840?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/thumb/Purple6/v4/0a/40/e3/0a40e3a4-6ea6-9c5f-a456-46de271a4e2e/mzl.azstmsqc.png/0x0ss-85.jpg'/></a>
     <p>[the Sequence] is a puzzle game that has you arranging a set of components on a physical grid in order to create a specific reaction. It feels like a minimalist version of <strong>Spacechem</strong>, which is a really cool (and difficult!) thing to pull off.</p>
   </div>
 
-  <div class='game strategy' id='skulls-of-the-shogun'>
+  <div class='game strategy solo ipad' id='skulls-of-the-shogun'>
     <h3><a href="https://geo.itunes.apple.com/us/app/skulls-of-the-shogun/id710354958?mt=8&at=1010laM5">Skulls of the Shogun</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/skulls-of-the-shogun/id710354958?mt=8&at=1010laM5"><img class='icon' src="http://a1490.phobos.apple.com/us/r30/Purple/v4/10/8a/b1/108ab158-e0d3-0cc9-a8c0-f0f13bb622f7/mzl.nvummkwz.png"/></a>
     <p>Fans of games like Advance Wars and Fire Emblem will find themselves right at home with this turn-based strategy wargame. Perfect touch controls, great strategic depth, and a narrative that oozes personality.</p></div>
 
-  <div class='game story' id='sorcery'>
+  <div class='game story solo both-platforms' id='sorcery'>
     <h3><a href="https://geo.itunes.apple.com/us/app/sorcery!/id627879091?mt=8&at=1010laM5">Sorcery!</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/sorcery!/id627879091?mt=8&at=1010laM5"><img class='icon' src="http://a461.phobos.apple.com/us/r30/Purple/v4/72/93/2d/72932dbf-3c58-15d7-cf4f-ebc12af93fb1/mzl.bbxthmhp.png"/></a><p>Sorcery! is a remake of an old choose-your-own-adventure book. From the campy paper cut-out art to the many branching paths, it diverges quickly. It has two sequels, each of which is more expansive and innovative than the last.</p>
   </div>
 
-  <div class='game action' id='space-invaders-infinity-gene'>
+  <div class='game action solo iphone' id='space-invaders-infinity-gene'>
     <h3><a href='https://geo.itunes.apple.com/us/app/space-invaders-infinity-gene/id323665063?mt=8&at=1010laM5'>Space Invaders Infinity Gene</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/space-invaders-infinity-gene/id323665063?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/pf/us/r30/Purple/v4/ee/78/25/ee78253e-51bf-4956-6689-1a6c5b0f6999/V4HttpAssetRepositoryClient-mzl.mrjiaexg.png-4611314155764600808.png'/></a>
     <p>A trippy, psychedelic take on the classic arcade game. It feels like halfway between a rhythm game and a classic shmup.</p>
   </div>
 
-  <div class='game strategy' id='strategery'>
+  <div class='game strategy solo local online both-platforms' id='strategery'>
     <h3><a href="https://geo.itunes.apple.com/us/app/strategery/id298908505?mt=8&at=1010laM5">Strategery</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/strategery/id298908505?mt=8&at=1010laM5"><img class='icon' src="http://a296.phobos.apple.com/us/r30/Purple/v4/fb/0a/6f/fb0a6fa5-2611-e938-4f19-a07a31f32de8/mzl.iggvgzkk.jpg"/></a>
     <p>Strategery is essentially an abstract version of Risk. Between a randomized game board and a wealth of customizable settings, it's very difficult to get bored with Strategery. Lots of multiplayer options as well.</p>
   </div>
 
-  <div class='game action' id='super-hexagon'>
+  <div class='game action solo both-platforms' id='super-hexagon'>
     <h3><a href="https://geo.itunes.apple.com/us/app/super-hexagon/id549027629?mt=8&at=1010laM5">Super Hexagon</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/super-hexagon/id549027629?mt=8&at=1010laM5"><img class='icon' src="http://a820.phobos.apple.com/us/r30/Purple/v4/9a/1f/e8/9a1fe8e4-2d1b-3a0c-2778-a9e3d82a2199/mzl.grebaimp.png"/></a><p>Super Hexagon is a game about getting lost in a state of flow. I love it for its hypnotic visuals and sound, perfectly-responsive controls, and sheer ball-busting difficulty. It's insanely difficult, but never cheap.
   </div>
 
-  <div class='game puzzle' id='threes'>
+  <div class='game puzzle solo both-platforms' id='threes'>
     <h3><a href="https://geo.itunes.apple.com/us/app/threes!/id779157948?mt=8&at=1010laM5">Threes!</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/threes!/id779157948?mt=8&at=1010laM5"><img class='icon' src="http://a130.phobos.apple.com/us/r30/Purple/v4/a9/cb/cc/a9cbcc5b-6606-3472-b3f9-eba971fe34a7/mzl.zexvglua.png"/></a><p>A delightful little puzzle game. Adorable graphics and sound are the cherry on top of an already addictive puzzler. If you've played <a href="http://gabrielecirulli.github.io/2048/">2048</a>, it was based on Threes (and isn't nearly as good).</p>
   </div>
 
-  <div class='game story puzzle' id='tiny-thief'>
+  <div class='game story puzzle solo both-platforms' id='tiny-thief'>
     <h3><a href="https://geo.itunes.apple.com/us/app/tiny-thief/id656620224?mt=8&at=1010laM5">Tiny Thief</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/tiny-thief/id656620224?mt=8&at=1010laM5"><img class='icon' src="http://a1309.phobos.apple.com/us/r30/Purple4/v4/49/af/0e/49af0e74-fc68-38f4-010b-065fc0466aac/mzl.frokolhg.png"/></a><p>A casual take on a point-and-click adventure game with stealth elements. It's divided up into self-contained puzzles, making it great for short play sessions. The earlier levels are a bit too easy, but if you stick it out it gets better.</p>
   </div>
 
-  <div class='game action' id='tiny-wings'>
+  <div class='game action solo both-platforms' id='tiny-wings'>
     <h3><a href='https://itunes.apple.com/us/app/tiny-wings/id417817520?mt=8&uo=4&at=1010laM5'>Tiny Wings</a></h3>
     <a href='https://itunes.apple.com/us/app/tiny-wings/id417817520?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/thumb/Purple3/v4/3d/57/31/3d573127-31d5-e4a9-9f8e-986c4616d467/source/100x100bb.jpg'/></a>
     <p>A riveting physics-based game all about getting into a good flying flow as a bird.</p>
   </div>
 
-  <div class='game story puzzle' id='touchtone'>
+  <div class='game story puzzle solo both-platforms' id='touchtone'>
     <h3><a href='https://geo.itunes.apple.com/us/app/touchtone/id962133182?mt=8&at=1010laM5'>TouchTone</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/touchtone/id962133182?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/pf/us/r30/Purple1/v4/ca/af/d9/caafd9c6-6240-5093-d399-eaded25bc4c4/mzl.tbskxnol.png'/></a>
     <p>A moderately fun stream-based puzzle game wrapped in a pitch-perfect framing narrative. TouchTone tells an NSA-like story of government surveillance, contextualizing your puzzles as helping enact wiretaps.</p>
   </div>
 
-  <div class='game puzzle' id='triple-town'>
+  <div class='game puzzle solo both-platforms' id='triple-town'>
     <h3><a href="https://geo.itunes.apple.com/us/app/triple-town/id490532168?mt=8&at=1010laM5">Triple Town</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/triple-town/id490532168?mt=8&at=1010laM5"><img class='icon' src="http://a1433.phobos.apple.com/us/r30/Purple4/v4/3c/b4/53/3cb45362-890e-916f-9fb0-56aade22e6b6/mzl.jiabcfxx.png"/></a>
     <p>The epitome of "simple to learn, difficult to master" puzzle games. Triple Town is essentially a match-3 puzzler, but joining three like pieces together causes them to combine into a single upgraded piece.</p>
   </div>
 
-  <div class='game action strategy' id='vainglory'>
+  <div class='game action strategy online both-platforms' id='vainglory'>
     <h3><a href='https://geo.itunes.apple.com/us/app/vainglory/id671464704?mt=8&at=1010laM5'>Vainglory</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/vainglory/id671464704?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/pf/us/r30/Purple1/v4/b4/36/77/b43677bd-f6d8-be56-9298-e0b4a5c66d9b/mzl.nnuosmog.png'/></a>
     <p>A fantastic free-to-play mobile MOBA. It's far simpler and more approachable than LoL or DOTA, making it a great introduction to the genre for folks looking for a strategic team-based multiplayer action.</p>
   </div>
 
-  <div class='game puzzle action' id='you-must-build-a-boat'>
+  <div class='game puzzle action solo both-platforms' id='you-must-build-a-boat'>
     <h3><a href='https://geo.itunes.apple.com/us/app/you-must-build-a-boat/id811397653?mt=8&at=1010laM5'>You Must Build A Boat</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/you-must-build-a-boat/id811397653?mt=8&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/pf/us/r30/Purple7/v4/69/b0/9b/69b09bde-f43d-5f64-7d71-ea41217b5b21/pr_source.png'/></a>
     <p>Unlike most match-three puzzle games, <strong>YMBAB</strong> is real-time, which gives it a wild and frenetic energy. A very compelling framing mechanic and a great aesthetic make this hard to put down.</p>
@@ -393,25 +398,25 @@
     <div class='inner'>
   <h2>Asyncronous Online Multiplayer</h2>
 
-  <div class='game strategy' id='hero-academy'>
+  <div class='game strategy online both-platforms' id='hero-academy'>
     <h3><a href="https://geo.itunes.apple.com/us/app/hero-academy/id488156323?mt=8&at=1010laM5">Hero Academy</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/hero-academy/id488156323?mt=8&at=1010laM5"><img class='icon' src="http://a1873.phobos.apple.com/us/r30/Purple2/v4/68/42/da/6842da01-d73f-54ea-f12e-f637c1f250bc/mzl.zdijiqhr.png"/></a>
     <p>A great turn-based strategy game. The balance between teams is great, there's a lot of depth in strategy if you're looking for it, and the presentation is pitch-perfect.</p>
   </div>
 
-  <div class='game strategy words' id='letterpress'>
+  <div class='game strategy words online both-platforms' id='letterpress'>
     <h3><a href="https://geo.itunes.apple.com/us/app/letterpress-word-game/id526619424?mt=8&at=1010laM5">Letterpress</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/letterpress-word-game/id526619424?mt=8&at=1010laM5"><img class='icon' src="http://a609.phobos.apple.com/us/r30/Purple4/v4/39/f9/5a/39f95afe-fbd2-5a7f-65a3-1c6d6bf310e7/mzl.qjpgaswa.png"/></a>
     <p>A genius game by Loren Brichter (aka "the guy who invented pull-to-refresh"). It's ostensibly a "word game", but it's really a territory control game that just happens to use a Boggle-esque word finding mechanic.</p>
   </div>
 
-  <div class='game strategy' id='subterfuge'>
+  <div class='game strategy online both-platforms' id='subterfuge'>
     <h3><a href='https://geo.itunes.apple.com/us/app/subterfuge/id702951905?mt=8&at=1010laM5'>Subterfuge</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/subterfuge/id702951905?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/thumb/Purple6/v4/17/f9/29/17f929e7-a54f-74e9-7f19-2d05bf530eb3/mzl.tqycuovv.png/0x0ss-85.jpg'/></a>
     <p>A <strong>Diplomacy</strong>-esque game of naval warfare about negotiating with and strategizing against your friends. Notably, ships move in real-time; a full game takes seven days to complete.</p>
   </div>
 
-  <div class='game strategy words' id='words-with-friends'>
+  <div class='game strategy words online local both-platforms' id='words-with-friends'>
     <h3><a href="https://geo.itunes.apple.com/us/app/words-with-friends/id322852954?mt=8&at=1010laM5">Words With Friends</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/words-with-friends/id322852954?mt=8&at=1010laM5"><img class='icon' src="http://a1647.phobos.apple.com/us/r30/Purple4/v4/29/e8/d2/29e8d208-2a63-cc36-28e5-6e11d170d61f/mzl.rzjcwkwx.png"/></a>
     <p>It's Scrabble, on your phone. You've probably heard of it, but if you haven't, check it out. The board, point values, and letter distributions are tweaked from Scrabble to make games more exciting and higher-scoring.</p>
@@ -423,55 +428,55 @@
 <div class='local section'><div class='inner'>
   <h2>Local Multiplayer</h2>
 
-  <div class='game strategy' id='artemis'>
+  <div class='game strategy local ipad' id='artemis'>
     <h3><a href="https://geo.itunes.apple.com/us/app/artemis-spaceship-bridge-simulator/id578372500?mt=8&at=1010laM5">Artemis</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/artemis-spaceship-bridge-simulator/id578372500?mt=8&at=1010laM5"><img class='icon' src="http://a1271.phobos.apple.com/us/r30/Purple6/v4/2f/76/f7/2f76f7ba-5a09-910f-0504-bf02263d2295/mzl.vbkngult.png"/></a>
     Artemis is basically a computer-aided Star Trek LARP. Your team of 4-5 players, each with their own device and distinct role, need to work together as a crew to steer the ship and accomplish various missions. Totally nerdy, and totally great.</p>
   </div>
 
-  <div class='game action' id='bloop'>
+  <div class='game action local ipad' id='bloop'>
     <h3><a href="https://geo.itunes.apple.com/us/app/bloop-tabletop-finger-frenzy/id517320341?mt=8&at=1010laM5">Bloop</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/bloop-tabletop-finger-frenzy/id517320341?mt=8&at=1010laM5"><img class='icon' src="http://a74.phobos.apple.com/us/r30/Purple2/v4/36/40/dd/3640ddeb-4487-fc42-5f5f-413439078476/mzl.kozjohvf.png"/></a>
     <p>A game of complete madness requiring everyone to madly tap on your iPad screen at the same time. This is pretty similar to Chicanery, which I enjoy a bit more, but Bloop is still worth your time.</p>
   </div>
 
-  <div class='game atmosphere' id='bounden'>
+  <div class='game atmosphere local iphone' id='bounden'>
     <h3><a href="https://geo.itunes.apple.com/us/app/bounden/id850456491?mt=8&at=1010laM5">Bounden</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/bounden/id850456491?mt=8&at=1010laM5"><img class='icon' src="http://is5.mzstatic.com/image/pf/us/r30/Purple3/v4/e9/ed/d1/e9edd1bd-87a6-a0da-e7f4-ec6d73d99bfc/mzl.tvnluwkr.png"/></a>
     <p>An absolutely beautiful collaborative dancing game. Two players, holding the same phone, will have to contort themselves in ways that create a wonderful abstract modern dance.</p>
   </div>
 
-  <div class='game action' id='chicanery'>
+  <div class='game action local ipad' id='chicanery'>
     <h3><a href="https://geo.itunes.apple.com/us/app/chicanery/id395775628?mt=8&at=1010laM5">Chicanery</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/chicanery/id395775628?mt=8&at=1010laM5"><img class='icon' src="http://a1935.phobos.apple.com/us/r30/Purple/d8/67/36/mzi.juadbsfa.png"/></a>
     <p>Each player must hold an on-screen button. If you let go of your button, you lose. You can do whatever you want to get your opponents to move their fingers off the screen (although preferably without any serious bodily harm).</p>
   </div>
 
-  <div class='game puzzle' id='fingle'>
+  <div class='game puzzle local ipad' id='fingle'>
     <h3><a href="https://geo.itunes.apple.com/us/app/fingle/id490109661?mt=8&ign-mpt=uo%3D4">Fingle</a> / <a href="https://geo.itunes.apple.com/us/app/finger-tied/id533011708?mt=8&at=1010laM5?mt=8&at=1010laM5">Finger Tied</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/fingle/id490109661?mt=8&at=1010laM5"><img class='icon' src="http://a1632.phobos.apple.com/us/r30/Purple2/v4/df/9d/ed/df9dedff-2771-28b6-8f59-4fa70567ff82/mzl.gqkkvnsv.png"/></a>
     <p>These two games are very similar, so I'm grouping them together. They both task you with solving puzzles by moving your fingers around the screen, inevitably getting them tangled up in the process.</p>
   </div>
 
-    <div class='game action strategy' id='glitch-tank'>
+    <div class='game action strategy local ipad' id='glitch-tank'>
     <h3><a href="https://geo.itunes.apple.com/us/app/glitch-tank/id490257878?mt=8&at=1010laM5">Glitch Tank</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/glitch-tank/id490257878?mt=8&at=1010laM5"><img class='icon' src="http://a734.phobos.apple.com/us/r30/Purple/v4/f1/6f/55/f16f550f-cea8-c261-063c-a834c67e563d/mzm.kbyjckpa.png"/></a>
     <p>A 2-player head-to-head tank-battle game. Each time you use an action, its control is randomly replaced with another one. Add in other mechanics that complicate things, and it's easy to get overwhelmed in a good way.
   </div>
 
-  <div class='game action strategy' id='olo'>
+  <div class='game action strategy local ipad' id='olo'>
     <h3><a href="https://geo.itunes.apple.com/us/app/olo-game/id529826126?mt=8&at=1010laM5">OLO</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/olo-game/id529826126?mt=8&at=1010laM5"><img class='icon' src="http://a91.phobos.apple.com/us/r30/Purple6/v4/de/c6/68/dec66894-b793-3bba-c87b-05db3ef98c27/mzl.cykkqigv.png"/></a>
     <p>OLO is a 2-player game similar to shuffleboard or crokinole. You and your opponent take turns flicking pucks across the screen. The physics feel as effortlessly natural as playing a physical game.</p>
   </div>
 
-  <div class='game action' id='recurse'>
+  <div class='game action local ipad' id='recurse'>
     <h3><a href="https://geo.itunes.apple.com/us/app/recurse/id524371030?mt=8&at=1010laM5">Recurse</a> (iPad)</h3>
     <a href="https://geo.itunes.apple.com/us/app/recurse/id524371030?mt=8&at=1010laM5"><img class='icon' src="http://a1108.phobos.apple.com/us/r30/Purple/v4/86/89/33/8689333f-1c4a-14b8-28bd-c1ba361f9507/mzl.yuzgfjqm.png"/></a>
     <p>Recurse is an iPad game that feels like it belongs on the Kinect. It uses the front-facing camera to use your body as input, tasking you with challenges that essentially force you to look silly in front of your friends.</p>
   </div>
 
-  <div class='game action strategy' id='spaceteam'>
+  <div class='game action strategy local both-platforms' id='spaceteam'>
     <h3><a href="https://geo.itunes.apple.com/us/app/spaceteam/id570510529?mt=8&at=1010laM5">Spaceteam</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/spaceteam/id570510529?mt=8&at=1010laM5"><img class='icon' src="http://a92.phobos.apple.com/us/r30/Purple4/v4/8c/b9/3b/8cb93b7c-7f1e-376b-4666-626246fc9a15/mzl.kuxvahnw.jpg"/></a>
     <p>Spaceteam is ultimately a game about shouting at your friends. It's an absolutely phenomenal party game for gamers and non-gamers alike. It also happens to be free.</p>
@@ -483,41 +488,41 @@
   <h2>Some more games!</h2>
   <p>Worked your way through everything I've mentioned and still want more? I try to keep the main list relatively trim, but here are some other games I've really enjoyed.</p>
   <ul>
-    <li class="action"><a href='https://geo.itunes.apple.com/us/app/ag-drive/id789356890?mt=8&at=1010laM5'>AG Drive</a>: A very competent <em>F-Zero</em>-style racing game with fantastic tilt/gyroscope controls.</li>
-    <li class="words puzzle"><a href='https://geo.itunes.apple.com/us/app/alphabear-word-puzzle-game/id930003798?mt=8&at=1010laM5'>Alphabear</a>: A charming word game from Spry Fox (<em>Triple Town</em>) that's marred by a few unfortunate design decisions surrounding monetization and F2P.</li>    
-    <li class="strategy puzzle"><a href='https://geo.itunes.apple.com/us/app/arcane-tower/id953806566?mt=8&at=1010laM5'>Arcane Tower</a>: Another <em>868-HACK</em>-esque minimalist roguelike, but one of the better-executed ones of the bunch.</li>
-    <li class="puzzle"><a href='https://geo.itunes.apple.com/us/app/bad-piggies/id533451786?mt=8&at=1010laM5'>Bad Piggies</a>: A really great physics-based car-building game from Rovio.</li>
-    <li class="action"><a href="https://geo.itunes.apple.com/us/app/boson-x/id660600531?mt=8&at=1010laM5">Boson X</a>: A really darn good infinite runner.</li>
-    <li class="puzzle"><a href="https://geo.itunes.apple.com/us/app/bravesmart/id511892006?mt=8&at=1010laM5">Bravesmart</a>: A relatively unknown, but worthwhile, Triple Town-esque puzzler.</li>
-    <li class="strategy"><a href="https://geo.itunes.apple.com/us/app/calculords/id777125004?mt=8&at=1010laM5">Calculords</a>: A nifty title that combines a collectible card game with <a href="https://en.wikipedia.org/wiki/24_Game">Math 24</a>-like mechanic that requires you to perform basic math calculations.</a>
-    <li class="puzzle"><a href='https://geo.itunes.apple.com/us/app/card-crawl/id950955524?mt=8&at=1010laM5'>Card Crawl</a>: A solitaire-like dungeon-themed card game roguelike.</li>
-    <li class="story strategy"><a href='https://geo.itunes.apple.com/us/app/dark-echo/id951177560?mt=8&at=1010laM5'>Dark Echo</a>: A unique horror game where your character navigates via echolocation.</li>
-    <li class="puzzle story"><a href='https://geo.itunes.apple.com/us/app/does-not-commute/id971756507?mt=8&at=1010laM5'>Does not Commute</a>: A fun traffic-routing puzzle game with top-knotch writing.</li>
-    <li class="puzzle"><a href="https://geo.itunes.apple.com/us/app/dots-a-game-about-connecting/id632285588?mt=8&at=1010laM5">Dots</a>: A matching puzzle game with a beautiful minimalist aesthetic. There's an expanded sequel, but I like the original better.</li>
-    <li class="puzzle"><a href="https://geo.itunes.apple.com/us/app/dungelot/id590247444?mt=8&at=1010laM5">Dungelot</a>: Roughly speaking, a roguelike Minesweeper game.</li>
-    <li class='puzzle'><a href='https://itunes.apple.com/us/app/ending/id647697139?mt=8&uo=4&at=1010laM5'>Ending</a>: A minimalist puzzle-y Roguelike.</li>
-    <li class="puzzle"><a href="https://geo.itunes.apple.com/us/app/hitman-go/id731645633?mt=8&at=1010laM5">Hitman GO</a>: The (weaker) precursor to <strong>Lara Croft GO</strong>.</li>
-    <li class="action puzzle"><a href="https://geo.itunes.apple.com/us/app/infinity-blade/id387428400?mt=8&at=1010laM5">Infinity Blade</a>: A gorgeous series of <em>Punch Out</em>-esque swordfighting games. There are 3 of 'em.</li>
-    <li class="action"><a href="https://geo.itunes.apple.com/us/app/jetpack-joyride/id457446957?mt=8&at=1010laM5">Jetpack Joyride</a>: One of the best infinite runners on the market.</li>
-    <li class="action puzzle"><a href='https://geo.itunes.apple.com/us/app/king-of-thieves/id952715194?mt=8&at=1010laM5'>King of Thieves</a>: A Super Meat Boy-esque 2D platformer crossed with Clash of Clans-style PvP.</li>
-    <li class="story words"><a href='https://geo.itunes.apple.com/us/app/lifeline.../id982354972?mt=8&at=1010laM5'>Lifeline</a>: An interactive fiction game that has someone else sending you messages with a really clever real-time mechanic.</li>
-    <li class="story words"><a href="https://geo.itunes.apple.com/us/app/joe-devers-lone-wolf/id670180785?mt=8&at=1010laM5">Lone Wolf</a>: A gorgeous text-based adventure game not unlike <em>Sorcery!</em>. The narrative and production values are top-notch, but the real-time combat felt frustrating and out of place.</li>
-    <li class="story puzzle atmosphere"><a href="https://geo.itunes.apple.com/us/app/machinarium/id459189186?mt=8&at=1010laM5">Machinarium</a> (iPad): An absolutely gorgeous, adorable, and enrapturing point-and-click adventure game. Sadly, the iPad port isn't the best.</li>
-    <li class="action"><a href="https://geo.itunes.apple.com/us/app/nimble-quest/id583638819?mt=8&at=1010laM5">Nimble Quest</a>: It's <em>Snake</em> (yep, the old candybar dumbphone game) reimagined as a roguelike.</li>
-    <li class="action"><a href='https://geo.itunes.apple.com/us/app/particle-mace/id513159044?mt=8&at=1010laM5'>Particle Mace</a>: A visceral arena "shooter" where you have no gun, just a mace of particles that you have to fling around you.</li>
-    <li class="strategy"><a href='https://geo.itunes.apple.com/us/app/plants-vs.-zombies-2/id597986893?mt=8&at=1010laM5'>Plants vs. Zombies 2</a>: A tower defense game with lots of attitude. F2P, but not obnoxious about it.</li>
-    <li class="action"><a href="https://geo.itunes.apple.com/us/app/ridiculous-fishing-tale-redemption/id601831815?mt=8&at=1010laM5">Ridiculous Fishing</a>: Calling this a "fishing game" doesn't quite do this great arcade-y game justice.</li>
-    <li class="atmosphere story"><a href='https://geo.itunes.apple.com/us/app/seek-find-your-friends/id976935671?mt=8&at=1010laM5'>Seek</a>: A short experimental game about exploring a beautiful space.</li>
-    <li class="action"><a href='https://geo.itunes.apple.com/us/app/shooty-skies-endless-arcade/id962993853?mt=8&at=1010laM5'>Shooty Skies</a>: A very clear F2P shmup from the creator of Crossy Road.</li>
-    <li class="action story"><a href='https://geo.itunes.apple.com/us/app/space-miner-platinum-edition/id353853276?mt=8&at=1010laM5'>Space Miner</a>: A fun Asteroids-like game wrapped in a smart RPG shell.</li>
-    <li class="action"><a href="https://geo.itunes.apple.com/us/app/super-crate-box/id483025428?mt=8&at=1010laM5">Super Crate Box</a>: A port of a fantastic action-platformer game. Sadly, the iOS controls leave a lot to be desired.</li>
-    <li class="puzzle"><a href='https://itunes.apple.com/us/app/super-happy-fun-block/id968666100?mt=8&uo=4&at=1010laM5'>Super Happy Fun Block</a>: A fun puzzle-platformer with great touch controls and some clever mechanics.</li>
-    <li class="action strategy story"><a href='https://geo.itunes.apple.com/us/app/sword-glory/id530457379?mt=8&at=1010laM5'>Sword & Glory</a>: A quirky game that's one part interactive fiction, one part roguelike, one part action swordfighting game.</li>
-    <li class="atmosphere story"><a href='https://geo.itunes.apple.com/us/app/american-express-unstaged/id933296264?mt=8&at=1010laM5'>Taylor Swift Experience</a>: Sort of like a VR FMV interactive theatre experience that uses Taylor Swift's "Blank Space" music video. Not a "game" so much as a fascinating interactive media experiment.</li>
-    <li class="puzzle"><a href='https://geo.itunes.apple.com/us/app/wargames-wopr/id528382306?mt=8&at=1010laM5'>WarGames: WOPR</a>: A Dungeon Raid clone that's wonderfully themed around the classic 80s movie.</li>
-    <li class="puzzle"><a href="https://geo.itunes.apple.com/us/app/world-of-goo/id415997203?mt=8&at=1010laM5">World of Goo</a> (iPad): A physics-based bridge-building simulator where the basic unit of construction is a blob of goo. Playing this on an iPad is a much more fun experience than using a mouse.</li>
-    <li class="strategy"><a href="https://geo.itunes.apple.com/us/app/yomi/id594630025?mt=8&at=1010laM5">Yomi</a> (iPad): A wonderful game by David Sirlin that's best described as "a fighting game in card form". The game design is fantastic, but the iPad presentation is a bit clunky.</li>
-    <li class="strategy"><a href="https://geo.itunes.apple.com/us/app/zynga-poker-texas-holdem/id354902315?mt=8&at=1010laM5">Zynga Poker</a>: A surprisingly good Texas Hold 'Em game. Has in-app purchases, but it's loose enough with free chips I've never had to pay.</li>
+    <li class="action solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/ag-drive/id789356890?mt=8&at=1010laM5'>AG Drive</a>: A very competent <em>F-Zero</em>-style racing game with fantastic tilt/gyroscope controls.</li>
+    <li class="words puzzle solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/alphabear-word-puzzle-game/id930003798?mt=8&at=1010laM5'>Alphabear</a>: A charming word game from Spry Fox (<em>Triple Town</em>) that's marred by a few unfortunate design decisions surrounding monetization and F2P.</li>    
+    <li class="strategy puzzle solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/arcane-tower/id953806566?mt=8&at=1010laM5'>Arcane Tower</a>: Another <em>868-HACK</em>-esque minimalist roguelike, but one of the better-executed ones of the bunch.</li>
+    <li class="puzzle solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/bad-piggies/id533451786?mt=8&at=1010laM5'>Bad Piggies</a>: A really great physics-based car-building game from Rovio.</li>
+    <li class="action solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/boson-x/id660600531?mt=8&at=1010laM5">Boson X</a>: A really darn good infinite runner.</li>
+    <li class="puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/bravesmart/id511892006?mt=8&at=1010laM5">Bravesmart</a>: A relatively unknown, but worthwhile, Triple Town-esque puzzler.</li>
+    <li class="strategy solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/calculords/id777125004?mt=8&at=1010laM5">Calculords</a>: A nifty title that combines a collectible card game with <a href="https://en.wikipedia.org/wiki/24_Game">Math 24</a>-like mechanic that requires you to perform basic math calculations.</a>
+    <li class="puzzle solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/card-crawl/id950955524?mt=8&at=1010laM5'>Card Crawl</a>: A solitaire-like dungeon-themed card game roguelike.</li>
+    <li class="story strategy solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/dark-echo/id951177560?mt=8&at=1010laM5'>Dark Echo</a>: A unique horror game where your character navigates via echolocation.</li>
+    <li class="puzzle story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/does-not-commute/id971756507?mt=8&at=1010laM5'>Does not Commute</a>: A fun traffic-routing puzzle game with top-knotch writing.</li>
+    <li class="puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/dots-a-game-about-connecting/id632285588?mt=8&at=1010laM5">Dots</a>: A matching puzzle game with a beautiful minimalist aesthetic. There's an expanded sequel, but I like the original better.</li>
+    <li class="puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/dungelot/id590247444?mt=8&at=1010laM5">Dungelot</a>: Roughly speaking, a roguelike Minesweeper game.</li>
+    <li class='puzzle solo both-platforms'><a href='https://itunes.apple.com/us/app/ending/id647697139?mt=8&uo=4&at=1010laM5'>Ending</a>: A minimalist puzzle-y Roguelike.</li>
+    <li class="puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/hitman-go/id731645633?mt=8&at=1010laM5">Hitman GO</a>: The (weaker) precursor to <strong>Lara Croft GO</strong>.</li>
+    <li class="action puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/infinity-blade/id387428400?mt=8&at=1010laM5">Infinity Blade</a>: A gorgeous series of <em>Punch Out</em>-esque swordfighting games. There are 3 of 'em.</li>
+    <li class="action solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/jetpack-joyride/id457446957?mt=8&at=1010laM5">Jetpack Joyride</a>: One of the best infinite runners on the market.</li>
+    <li class="action puzzle online iphone"><a href='https://geo.itunes.apple.com/us/app/king-of-thieves/id952715194?mt=8&at=1010laM5'>King of Thieves</a>: A Super Meat Boy-esque 2D platformer crossed with Clash of Clans-style PvP.</li>
+    <li class="story words solo iphone"><a href='https://geo.itunes.apple.com/us/app/lifeline.../id982354972?mt=8&at=1010laM5'>Lifeline</a>: An interactive fiction game that has someone else sending you messages with a really clever real-time mechanic.</li>
+    <li class="story words solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/joe-devers-lone-wolf/id670180785?mt=8&at=1010laM5">Lone Wolf</a>: A gorgeous text-based adventure game not unlike <em>Sorcery!</em>. The narrative and production values are top-notch, but the real-time combat felt frustrating and out of place.</li>
+    <li class="story puzzle atmosphere solo ipad"><a href="https://geo.itunes.apple.com/us/app/machinarium/id459189186?mt=8&at=1010laM5">Machinarium</a> (iPad): An absolutely gorgeous, adorable, and enrapturing point-and-click adventure game. Sadly, the iPad port isn't the best.</li>
+    <li class="action solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/nimble-quest/id583638819?mt=8&at=1010laM5">Nimble Quest</a>: It's <em>Snake</em> (yep, the old candybar dumbphone game) reimagined as a roguelike.</li>
+    <li class="action solo iphone"><a href='https://geo.itunes.apple.com/us/app/particle-mace/id513159044?mt=8&at=1010laM5'>Particle Mace</a>: A visceral arena "shooter" where you have no gun, just a mace of particles that you have to fling around you.</li>
+    <li class="strategy solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/plants-vs.-zombies-2/id597986893?mt=8&at=1010laM5'>Plants vs. Zombies 2</a>: A tower defense game with lots of attitude. F2P, but not obnoxious about it.</li>
+    <li class="action solo iphone"><a href="https://geo.itunes.apple.com/us/app/ridiculous-fishing-tale-redemption/id601831815?mt=8&at=1010laM5">Ridiculous Fishing</a>: Calling this a "fishing game" doesn't quite do this great arcade-y game justice.</li>
+    <li class="atmosphere story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/seek-find-your-friends/id976935671?mt=8&at=1010laM5'>Seek</a>: A short experimental game about exploring a beautiful space.</li>
+    <li class="action solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/shooty-skies-endless-arcade/id962993853?mt=8&at=1010laM5'>Shooty Skies</a>: A fun streamlined shmup from the creator of Crossy Road.</li>
+    <li class="action story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/space-miner-platinum-edition/id353853276?mt=8&at=1010laM5'>Space Miner</a>: A fun Asteroids-like game wrapped in a smart RPG shell.</li>
+    <li class="action solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/super-crate-box/id483025428?mt=8&at=1010laM5">Super Crate Box</a>: A port of a fantastic action-platformer game. Sadly, the iOS controls leave a lot to be desired.</li>
+    <li class="puzzle solo iphone"><a href='https://itunes.apple.com/us/app/super-happy-fun-block/id968666100?mt=8&uo=4&at=1010laM5'>Super Happy Fun Block</a>: A fun puzzle-platformer with great touch controls and some clever mechanics.</li>
+    <li class="action strategy story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/sword-glory/id530457379?mt=8&at=1010laM5'>Sword & Glory</a>: A quirky game that's one part interactive fiction, one part roguelike, one part action swordfighting game.</li>
+    <li class="atmosphere story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/american-express-unstaged/id933296264?mt=8&at=1010laM5'>Taylor Swift Experience</a>: Sort of like a VR FMV interactive theatre experience that uses Taylor Swift's "Blank Space" music video. Not a "game" so much as a fascinating interactive media experiment.</li>
+    <li class="puzzle solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/wargames-wopr/id528382306?mt=8&at=1010laM5'>WarGames: WOPR</a>: A Dungeon Raid clone that's wonderfully themed around the classic 80s movie.</li>
+    <li class="puzzle solo ipad"><a href="https://geo.itunes.apple.com/us/app/world-of-goo/id415997203?mt=8&at=1010laM5">World of Goo</a> (iPad): A physics-based bridge-building simulator where the basic unit of construction is a blob of goo. Playing this on an iPad is a much more fun experience than using a mouse.</li>
+    <li class="strategy solo online ipad"><a href="https://geo.itunes.apple.com/us/app/yomi/id594630025?mt=8&at=1010laM5">Yomi</a> (iPad): A wonderful game by David Sirlin that's best described as "a fighting game in card form". The game design is fantastic, but the iPad presentation is a bit clunky.</li>
+    <li class="strategy online"><a href="https://geo.itunes.apple.com/us/app/zynga-poker-texas-holdem/id354902315?mt=8&at=1010laM5">Zynga Poker</a>: A surprisingly good Texas Hold 'Em game. Has in-app purchases, but it's loose enough with free chips I've never had to pay.</li>
   </ul>
 </div></div>
 
