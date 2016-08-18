@@ -12,6 +12,35 @@ toArray(document.querySelectorAll("input.platform"))
     el.addEventListener("change", updatePlatform)
   })
 
+var showingFullChangelog = false
+document.getElementById("changelog-toggle")
+  .addEventListener("click", toggleChangelog)
+
+//---
+// Changelog
+//---
+function toggleChangelog() {
+  var changelog = toArray(document.querySelectorAll('#changelog li'))
+  var changelogToggle = document.getElementById('changelog-toggle')
+
+  var buttonText, changelogVisibility
+  if (showingFullChangelog) {
+    buttonText = "Show More History"
+    changelogVisibility = "none"
+  } else {
+    buttonText = "Hide History"
+    changelogVisibility = "list-item"
+  }
+
+  changelogToggle.innerText = buttonText
+  changelog.forEach(function(el) {
+    el.style.display = changelogVisibility
+  })    
+
+
+  showingFullChangelog = !showingFullChangelog;
+}
+
 
 //---
 // Filters

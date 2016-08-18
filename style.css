@@ -122,6 +122,14 @@ div {
   clear: both;
 }
 
+#changelog li {
+  display: none;
+}
+
+#changelog li:first-of-type {
+  display: list-item !important;
+}
+
 @media only screen and (max-width: 1024px) {
   .inner {
     margin-left: 5%;
