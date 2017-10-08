@@ -12,6 +12,9 @@ toArray(document.querySelectorAll("input.platform"))
     el.addEventListener("change", updatePlatform)
   })
 
+document.getElementById('toggle-offline')
+  .addEventListener("change", updateOffline)
+
 var showingFullChangelog = false
 document.getElementById("changelog-toggle")
   .addEventListener("click", toggleChangelog)
@@ -35,7 +38,7 @@ function toggleChangelog() {
   changelogToggle.innerText = buttonText
   changelog.forEach(function(el) {
     el.style.display = changelogVisibility
-  })    
+  })
 
 
   showingFullChangelog = !showingFullChangelog;
@@ -60,7 +63,7 @@ function hideAllGames() {
 
 function show(selector) {
   toArray(document.querySelectorAll(selector))
-    .forEach(function(el) { el.style.display = "block" });  
+    .forEach(function(el) { el.style.display = "block" });
 }
 
 function classSelectorForFilters(filters) {
@@ -74,6 +77,7 @@ function updateFilters(e) {
   show(classSelectorForFilters(getCheckedFilters()));
 
   if (e) updatePlatform()
+  if (e) updateOffline()
 }
 
 //---
@@ -82,22 +86,41 @@ function updateFilters(e) {
 
 function updatePlatform(e) {
   if (e) updateFilters();
-  
+  if (e) updateOffline()
+
   var iphone = document.getElementById("iphone").checked
   var ipad = document.getElementById("ipad").checked
 
   if (!iphone) {
     toArray(document.querySelectorAll(".iphone"))
-      .forEach(function(el) { el.style.display = "none" });    
+      .forEach(function(el) { el.style.display = "none" });
   }
 
   if (!ipad) {
     toArray(document.querySelectorAll(".ipad"))
-      .forEach(function(el) { el.style.display = "none" });    
+      .forEach(function(el) { el.style.display = "none" });
   }
 
   if (!iphone && !ipad) {
     toArray(document.querySelectorAll(".both-platforms"))
-      .forEach(function(el) { el.style.display = "none" });    
+      .forEach(function(el) { el.style.display = "none" });
+  }
+}
+
+
+//---
+// Offline Toggle
+//---
+
+function updateOffline(e) {
+  if (e) {
+    updateFilters()
+    updatePlatform()
+  }
+
+  var hideOnline = document.getElementById("toggle-offline").checked
+  if (hideOnline) {
+    toArray(document.querySelectorAll(".online"))
+      .forEach(function(el) { el.style.display = "none" });
   }
 }
