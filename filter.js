@@ -12,6 +12,11 @@ toArray(document.querySelectorAll("input.platform"))
     el.addEventListener("change", updatePlatform)
   })
 
+toArray(document.querySelectorAll("input.players"))
+  .forEach(function(el) {
+    el.addEventListener("change", updatePlayers)
+  })
+
 document.getElementById('toggle-offline')
   .addEventListener("change", updateOffline)
 
@@ -56,6 +61,12 @@ function getCheckedFilters() {
     .map(function(input) { return input.id });
 }
 
+function getCheckedPlayers() {
+  return toArray(document.querySelectorAll("input.players"))
+  .filter(function(input) { return input.checked })
+  .map(function(input) { return input.id });
+}
+
 function hideAllGames() {
   toArray(document.querySelectorAll(".game, .other li"))
     .forEach(function(el) { el.style.display = "none" });
@@ -64,6 +75,11 @@ function hideAllGames() {
 function show(selector) {
   toArray(document.querySelectorAll(selector))
     .forEach(function(el) { el.style.display = "block" });
+}
+
+function hide(selector) {
+  toArray(document.querySelectorAll(selector))
+    .forEach(function(el) { el.style.display = "none" });
 }
 
 function classSelectorForFilters(filters) {
@@ -76,8 +92,11 @@ function updateFilters(e) {
   hideAllGames();
   show(classSelectorForFilters(getCheckedFilters()));
 
-  if (e) updatePlatform()
-  if (e) updateOffline()
+  if (e) {
+    updatePlatform()
+    updateOffline()
+    updatePlayers()
+  }
 }
 
 //---
@@ -85,8 +104,11 @@ function updateFilters(e) {
 //---
 
 function updatePlatform(e) {
-  if (e) updateFilters();
-  if (e) updateOffline()
+  if (e) {
+    updateFilters()
+    updateOffline()
+    updatePlayers()
+  }
 
   var iphone = document.getElementById("iphone").checked
   var ipad = document.getElementById("ipad").checked
@@ -116,6 +138,7 @@ function updateOffline(e) {
   if (e) {
     updateFilters()
     updatePlatform()
+    updatePlayers()
   }
 
   var hideOnline = document.getElementById("toggle-offline").checked
@@ -123,4 +146,29 @@ function updateOffline(e) {
     toArray(document.querySelectorAll(".online"))
       .forEach(function(el) { el.style.display = "none" });
   }
+}
+
+//---
+// Players Toggle
+//---
+function updatePlayers(e) {
+  if (e) {
+    updateFilters()
+    updatePlatform()
+    updateOffline()
+  }
+
+  // TODO: This isn't great
+  var filters = getCheckedPlayers()
+  document.querySelectorAll('.game').forEach(function(el) {
+    var show = false
+    for (var i = 0; i < filters.length; i++) {
+      if (el.classList.contains(filters[i])) {
+        show = true
+      }
+    }
+    if (!show) {
+      el.style.display = "none"
+    }
+  })
 }

@@ -34,7 +34,7 @@
   <h3 class='rules'>Changelog</h3>
   <ul id='changelog'>
   <ul>
-    <li>October 8, 2017: Added <a href="#burly-men-at-sea">Burly Men At Sea</a>, <a href="#data-wing">Data Wing</a>, <a href="#freeways">Freeways</a>, <a href="#iron-marines">Iron Marines</a>, <a href="#metamorphabet">Metamorphabet</a>, <a href="#the-mummy">The Mummy: Dark Universe Story</a>, <a href="#pudding-monsters">Pudding Monsters</a>, <a href="#superbrothers">Superbrothers: Sword and Sworcery EP</a>, <a href="#triple-agent">Triple Agent</a>. Added <a href="#the-last-rocket">The Last Rocket</a>, <a href="#war-tortoise">War Tortoise</a> to the bottom. Removed <a href="https://itunes.apple.com/us/app/traptionbakery/id1068266222?mt=8&uo=4">Traption Baker</a> and <a href="#">Hero Academy</a>.</li>
+    <li>October 8, 2017: Added <a href="#burly-men-at-sea">Burly Men At Sea</a>, <a href="#data-wing">Data Wing</a>, <a href="#freeways">Freeways</a>, <a href="#iron-marines">Iron Marines</a>, <a href="#metamorphabet">Metamorphabet</a>, <a href="#the-mummy">The Mummy: Dark Universe Story</a>, <a href="#pudding-monsters">Pudding Monsters</a>, <a href="#superbrothers">Superbrothers: Sword and Sworcery EP</a>, <a href="#triple-agent">Triple Agent</a>. Added <a href="#the-last-rocket">The Last Rocket</a>, <a href="#war-tortoise">War Tortoise</a> to the bottom. Removed <a href="https://itunes.apple.com/us/app/traptionbakery/id1068266222?mt=8&uo=4">Traption Baker</a>, <a href="#">Yomi</a>, and <a href="#">Hero Academy</a>. Added filter for offline only. Removed discrete sections in favor of solo/multiplayer/etc toggles.</li>
     <button id='changelog-toggle'>Show More History</button>
     <li>June 14, 2017: Added <a href="#beglitched">Beglitched</a>, <a href="#cosmic-express">Cosmic Express</a>, <a href="#neon-chrome">Neon Chrome</a>, <a href="#rayman-adventures">Rayman Adventures</a>, <a href="#rayman-fiesta-run">Rayman Fiesta Run</a>, <a href="#skullgirls">Skullgirls</a>, <a href="#typeshift">Typeshift</a>, <a href="#vignettes">Vignettes</a>, and <a href="#ziggurat">ZiGGURAT</a>. Added <a href="#city-of-love">City of Love: Paris</a>, <a href="#implosion">Implosion<a>, <a href="#mystic-messenger">Mystic Messenger</a> to the bottom. Removed a few dead games.</li>
     <li>December 20, 2016: Added <a href="#super-mario-run">Super Mario Run</a> and <a href="#swap-sword">Swap Sword</a>.</li>
@@ -46,6 +46,11 @@
     <li>August 19, 2015: Added <a href="#pac-man-championship-edition-dx">Pac-Man CE DX</a>, <a href="#prune">Prune</a>, <a href="#seabeard">Seabeard</a>. Added <strong>Alphabear</strong> and <strong>King of Thieves</strong> to the bottom list.
     <li>July 10, 2015: Added <a href="#bounden">Bounden</a>, <a href="#desert-golfing">Desert Golfing</a>, <a href="#drop7">Drop 7</a>, <a href="#english-country-tune">English Country Tune</a>, <a href="#helix">Helix</a>, <a href="#her-story">Her Story</a>, <a href="#kero-blaster">Kero Blaster</a>, <a href="#neko-atsume">Neko Atsume</a>, <a href="#oquonie">Oquonie</a>, <a href="#out-there">Out There</a>, <a href="papers-please">Papers Please</a>, <a href="#rolando">Rolando</a>, <a href="#space-invaders-infinity-gene">Space Invaders Infinity Gene</a>, <a href='#touchtone'>TouchTone</a>, <a href="#vainglory">Vainglory</a>, a buttload of games to the final section, and this changelog.</li>
   </ul>
+</div>
+</div>
+
+<div class='filters section'><div class='inner'>
+  <h2>Filters</h2>
 
   <h3 class="rules" style="margin-bottom: 0.5em">Show Me Games With:</h3>
 
@@ -65,14 +70,17 @@
   <h3 class="rules" style="margin-bottom: 0.5em">Show Me Games That Work Offline:</h3>
   <input type="checkbox" class="toggle-offline" name="toggle-offline" id="toggle-offline" ><label for="toggle-offline">Only show games with offline support</label>
 
-
-
+  <h3 class="rules" style="margin-bottom: 0.5em">Show Me Games I Can Play:</h3>
+  <input type="checkbox" class="players" name="solo" id="solo" checked><label for="solo">By Myself</label>
+  <input type="checkbox" class="players" name="local-multi" id="local-multi" checked><label for="local-multi">With Friends In-Person</label><br/>
+  <input type="checkbox" class="players" name="async-multi" id="async-multi" checked><label for="async-multi">With Friends Online (Async)</label>
+  <input type="checkbox" class="players" name="realtime-multi" id="realtime-multi" checked><label for="realtime-multi">With Friends Online (Real-Time)</label>
 </div>
 </div>
 
 <div class='solo section'>
   <div class='inner'>
-  <h2>Single-Player Games</h2>
+  <h2>The Games</h2>
 
   <div class='game story words solo both-platforms' id='80-days'>
     <h3><a href="https://geo.itunes.apple.com/us/app/80-days/id892812659?mt=8&at=1010laM5">80 Days</a></h3>
@@ -84,6 +92,12 @@
     <h3><a href="https://geo.itunes.apple.com/us/app/868-hack/id635749911?mt=8&at=1010laM5">868-HACK</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/868-hack/id635749911?mt=8&at=1010laM5"><img class='icon' src="http://a1763.phobos.apple.com/us/r30/Purple6/v4/bb/8f/b8/bb8fb888-3426-34f7-f0fe-07ccafa66613/mzl.twplhqtl.png"/></a>
     <p>The most elegant roguelike I've ever played. Every single move you take is the difference between winning and losing; the stakes are always sky-high. It's unapproachable and unwelcoming, but well worth your time.</p>
+  </div>
+
+  <div class='game strategy local-multi ipad' id='artemis'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/artemis-spaceship-bridge-simulator/id578372500?mt=8&at=1010laM5">Artemis</a></h3>
+      <a href="https://geo.itunes.apple.com/us/app/artemis-spaceship-bridge-simulator/id578372500?mt=8&at=1010laM5"><img class='icon' src="http://a1271.phobos.apple.com/us/r30/Purple6/v4/2f/76/f7/2f76f7ba-5a09-910f-0504-bf02263d2295/mzl.vbkngult.png"/></a>
+      Artemis is basically a computer-aided Star Trek LARP. Your team of 4-5 players, each with their own device and distinct role, need to work together as a crew to steer the ship and accomplish various missions. Totally nerdy, and totally great.</p>
   </div>
 
   <div class='game story strategy solo both-platforms' id='banner-saga'>
@@ -98,7 +112,7 @@
 		<p>A minesweeper-y match 3-y puzzle game with a killer glitch-meets-witch "cyberpink" aesthetic and a delightfully brutal difficulty curve. Available on PC, but it really shines with touch controls.</p>
 	</div>
 
-  <div class='game puzzle story words both-platforms' id='blackbar'>
+  <div class='game puzzle story words both-platforms solo' id='blackbar'>
     <h3><a href="https://geo.itunes.apple.com/us/app/blackbar/id672002602?mt=8&at=1010laM5">Blackbar</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/blackbar/id672002602?mt=8&at=1010laM5"><img class='icon' src="http://a1557.phobos.apple.com/us/r30/Purple/v4/81/bc/f3/81bcf36f-4021-99ed-e65a-e9fa5e198a98/mzl.ikqexhro.png"/></a>
     <p>Set in a vague dystopian future, Blackbar tells the story of a resistance movement fighting censorship, by means of solving censorship puzzles. It's short, sweet, and strikes the right balance of story and puzzle.</p>
@@ -109,6 +123,18 @@
     <a href='https://itunes.apple.com/us/app/blackbox-think-outside-box/id962969578?mt=8&uo=4'><img class='icon' src='http://is3.mzstatic.com/image/thumb/Purple20/v4/c8/12/8a/c8128a6d-ec16-05ec-0219-708c2b2564db/source/100x100bb.jpg'/></a>
     <p>A fiendishly clever (and brutally difficult) puzzle game that requires you do to weird things with your phone, taking advantage of just about every sensor it has inside it.</p>
   </div>
+
+  <div class='game action local-multi ipad' id='bloop'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/bloop-tabletop-finger-frenzy/id517320341?mt=8&at=1010laM5">Bloop</a> (iPad)</h3>
+      <a href="https://geo.itunes.apple.com/us/app/bloop-tabletop-finger-frenzy/id517320341?mt=8&at=1010laM5"><img class='icon' src="http://a74.phobos.apple.com/us/r30/Purple2/v4/36/40/dd/3640ddeb-4487-fc42-5f5f-413439078476/mzl.kozjohvf.png"/></a>
+      <p>A game of complete madness requiring everyone to madly tap on your iPad screen at the same time. This is pretty similar to Chicanery, which I enjoy a bit more, but Bloop is still worth your time.</p>
+    </div>
+
+    <div class='game atmosphere local-multi iphone' id='bounden'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/bounden/id850456491?mt=8&at=1010laM5">Bounden</a></h3>
+      <a href="https://geo.itunes.apple.com/us/app/bounden/id850456491?mt=8&at=1010laM5"><img class='icon' src="http://is5.mzstatic.com/image/pf/us/r30/Purple3/v4/e9/ed/d1/e9edd1bd-87a6-a0da-e7f4-ec6d73d99bfc/mzl.tvnluwkr.png"/></a>
+      <p>An absolutely beautiful collaborative dancing game. Two players, holding the same phone, will have to contort themselves in ways that create a wonderful abstract modern dance.</p>
+    </div>
 
   <div class='game strategy solo ipad' id='brogue'>
     <h3><a href='https://itunes.apple.com/us/app/brogue/id613921309?mt=8&uo=4'>Brogue</a> (iPad)</h3>
@@ -122,7 +148,14 @@
       <p>A charming experience that feels like an interactive children's book in the best possible way. You get to go on fun little seafaring adventures!</p>
     </div>
 
-  <div class='game strategy online both-platforms' id='clash-royale'>
+    <div class='game action local-multi ipad' id='chicanery'>
+        <h3><a href="https://geo.itunes.apple.com/us/app/chicanery/id395775628?mt=8&at=1010laM5">Chicanery</a> (iPad)</h3>
+        <a href="https://geo.itunes.apple.com/us/app/chicanery/id395775628?mt=8&at=1010laM5"><img class='icon' src="http://a1935.phobos.apple.com/us/r30/Purple/d8/67/36/mzi.juadbsfa.png"/></a>
+        <p>Each player must hold an on-screen button. If you let go of your button, you lose. You can do whatever you want to get your opponents to move their fingers off the screen (although preferably without any serious bodily harm).</p>
+      </div>
+
+
+  <div class='game strategy realtime-multi solo online both-platforms' id='clash-royale'>
     <h3><a href='https://itunes.apple.com/us/app/clash-royale/id1053012308?mt=8&uo=4'>Clash Royale</a></h3>
     <a href='https://itunes.apple.com/us/app/clash-royale/id1053012308?mt=8&uo=4'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple20/v4/39/2f/d6/392fd634-17a5-9cdc-913d-5414ae9ec381/source/100x100bb.jpg'/></a>
     <p>Real-time strategy meets MOBA meets collectible card game in this fast-pased game from the Clash of Clans folks. There's a lot of aggressive F2P trappings, but at its core is a fantastic competitive game.</p>
@@ -188,6 +221,12 @@
     <p>FTL is a truly fantastic space-themed roguelike. Pilot a ship through the depths of space, micromanaging each of your crew members as you combat enemy ship after enemy ship. Originally built for PC, but it works far better on iPad. </p>
   </div>
 
+  <div class='game puzzle local-multi ipad' id='fingle'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/fingle/id490109661?mt=8&ign-mpt=uo%3D4">Fingle</a> / <a href="https://geo.itunes.apple.com/us/app/finger-tied/id533011708?mt=8&at=1010laM5?mt=8&at=1010laM5">Finger Tied</a> (iPad)</h3>
+      <a href="https://geo.itunes.apple.com/us/app/fingle/id490109661?mt=8&at=1010laM5"><img class='icon' src="http://a1632.phobos.apple.com/us/r30/Purple2/v4/df/9d/ed/df9dedff-2771-28b6-8f59-4fa70567ff82/mzl.gqkkvnsv.png"/></a>
+      <p>These two games are very similar, so I'm grouping them together. They both task you with solving puzzles by moving your fingers around the screen, inevitably getting them tangled up in the process.</p>
+    </div>
+
 
   <div class='game puzzle action solo both-platforms' id='the-firm'>
     <h3><a href="https://geo.itunes.apple.com/us/app/the-firm/id883108531?mt=8&at=1010laM5">The Firm</a></h3>
@@ -200,6 +239,12 @@
       <a href='https://itunes.apple.com/us/app/freeways/id1203896014?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/thumb/Purple118/v4/55/40/e7/5540e7db-ea29-4b5e-b78c-40bb0edaca94/source/100x100bb.jpg'/></a>
       <p>A lo-fi puzzle game about designing freeway overpasses for self-driving cars. Feels like the punk cousin of <a href="#mini-metro">Mini Metro</a>.</p>
     </div>
+
+    <div class='game action strategy local-multi ipad' id='glitch-tank'>
+        <h3><a href="https://geo.itunes.apple.com/us/app/glitch-tank/id490257878?mt=8&at=1010laM5">Glitch Tank</a> (iPad)</h3>
+        <a href="https://geo.itunes.apple.com/us/app/glitch-tank/id490257878?mt=8&at=1010laM5"><img class='icon' src="http://a734.phobos.apple.com/us/r30/Purple/v4/f1/6f/55/f16f550f-cea8-c261-063c-a834c67e563d/mzm.kbyjckpa.png"/></a>
+        <p>A 2-player head-to-head tank-battle game. Each time you use an action, its control is randomly replaced with another one. Add in other mechanics that complicate things, and it's easy to get overwhelmed in a good way.
+      </div>
 
   <div class='game puzzle atmosphere solo both-platforms' id='a-good-snowman-is-hard-to-build'>
     <h3><a href='https://geo.itunes.apple.com/us/app/a-good-snowman-is-hard-to-build/id1040930654?mt=8&at=1010laM5'>A Good Snowman Is Hard To Build</a></h3>
@@ -219,7 +264,7 @@
     <p>A phenomenal FMV game where you explore the circumstances surrounding a murder by searching and viewing old police interview footage. I don't want to give anything away; if you're at all interested in narrative games, Her Story is more than worth playing.</p>
   </div>
 
-  <div class='game strategy both-platforms online' id='hearthstone'>
+  <div class='game strategy both-platforms realtime-multi online' id='hearthstone'>
     <h3><a href="https://geo.itunes.apple.com/us/app/hearthstone-heroes-warcraft/id625257520?mt=8&at=1010laM5">Hearthstone</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/hearthstone-heroes-warcraft/id625257520?mt=8&at=1010laM5"><img class='icon' src="http://a1285.phobos.apple.com/us/r30/Purple/v4/8a/8e/d4/8a8ed418-e543-3cc2-c65f-7393bed7fac2/mzl.jwceymhs.png"/></a>
     <p>Blizzard's F2P deck-building card game. It's heavily inspired by Magic, but far simpler to grasp. A great example of doing F2P right, and a fantastic iOS port. It needs an Internet connection to play, even just against the AI.</p>
@@ -255,7 +300,7 @@
 		<p>A smart take on programming games. It essentially teaches you the concepts of assembly programming, but in a way that works effortlessly on a touch screen.</p>
 	</div>
 
-  <div class='game action puzzle solo local both-platforms' id='hundreds'>
+  <div class='game action puzzle solo local-multi both-platforms' id='hundreds'>
     <h3><a href="https://geo.itunes.apple.com/us/app/hundreds/id493536432?mt=8&at=1010laM5">Hundreds</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/hundreds/id493536432?mt=8&at=1010laM5"><img class='icon' src="http://a65.phobos.apple.com/us/r30/Purple/v4/c1/42/59/c1425921-3637-92c0-7112-28c63ed370c3/mzl.nddrfchp.png"/></a>
     <p>The perfect combination of reflex-based gameplay and strategy: although the game demands precise finger dexterity, you can deliberate a long time before acting. It also works great as a collaborative multiplayer game on iPad!</p>
@@ -297,6 +342,12 @@
     <a href='https://geo.itunes.apple.com/us/app/lara-croft-go/id971304016?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple69/v4/9c/c8/e4/9cc8e43c-b52f-6d5c-1ac7-5ef8220e6845/source/100x100bb.jpg'/></a>
     <p>A clever turn-based puzzle game based on the Tomb Raider series. Wonderful puzzle design, and an absolutely lovely aesthetic.</p>
   </div>
+
+  <div class='game strategy words online async-multi both-platforms' id='letterpress'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/letterpress-word-game/id526619424?mt=8&at=1010laM5">Letterpress</a></h3>
+      <a href="https://geo.itunes.apple.com/us/app/letterpress-word-game/id526619424?mt=8&at=1010laM5"><img class='icon' src="http://a609.phobos.apple.com/us/r30/Purple4/v4/39/f9/5a/39f95afe-fbd2-5a7f-65a3-1c6d6bf310e7/mzl.qjpgaswa.png"/></a>
+      <p>A genius game by Loren Brichter (aka "the guy who invented pull-to-refresh"). It's ostensibly a "word game", but it's really a territory control game that just happens to use a Boggle-esque word finding mechanic.</p>
+    </div>
 
   <div class='game story action puzzle solo both-platforms' id='lili'>
     <h3><a href='https://geo.itunes.apple.com/us/app/lili/id560692867?mt=8&at=1010laM5'>Lili</a></h3>
@@ -351,7 +402,13 @@
 		<h3><a href='https://itunes.apple.com/us/app/neon-chrome/id981035758?mt=8&uo=4&at=1010laM5'>Neon Chrome</a></h3>
 		<a href='https://itunes.apple.com/us/app/neon-chrome/id981035758?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/thumb/Purple82/v4/5d/97/6d/5d976d76-99f5-82e1-8f87-e190b23d8c9a/source/100x100bb.jpg'/></a>
 		<p>A twin-stick shooter roguelike with a solid cyberpunk aesthetic. It definitely feels like a game that happens to be on iOS, rather than a game truly designed <em>for</em> iOS, but it's still great if you want a pick-up-and-play action game.</p>
-	</div>
+  </div>
+
+  <div class='game action strategy local-multi ipad' id='olo'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/olo-game/id529826126?mt=8&at=1010laM5">OLO</a> (iPad)</h3>
+      <a href="https://geo.itunes.apple.com/us/app/olo-game/id529826126?mt=8&at=1010laM5"><img class='icon' src="http://a91.phobos.apple.com/us/r30/Purple6/v4/de/c6/68/dec66894-b793-3bba-c87b-05db3ef98c27/mzl.cykkqigv.png"/></a>
+      <p>OLO is a 2-player game similar to shuffleboard or crokinole. You and your opponent take turns flicking pucks across the screen. The physics feel as effortlessly natural as playing a physical game.</p>
+    </div>
 
   <div class='game puzzle atmosphere solo both-platforms' id='oquonie'>
     <h3><a href='https://geo.itunes.apple.com/us/app/oquonie/id819777958?mt=8&at=1010laM5'>Oquonie</a></h3>
@@ -383,7 +440,7 @@
     <p>A game about being an immigration agent in a fictional Eastern Bloc state. It manages to somehow make the monotony of bureaucracy fun, while also layering in really interesting levels of narrative choice and social commentary.</p>
   </div>
 
-  <div class='game strategy solo both-platforms' id='polytopia'>
+  <div class='game strategy solo local-multi both-platforms' id='polytopia'>
     <h3><a href='https://itunes.apple.com/us/app/the-battle-of-polytopia/id1006393168?mt=8&uo=4'>the battle of Polytopia</a></h3>
     <a href='https://itunes.apple.com/us/app/the-battle-of-polytopia/id1006393168?mt=8&uo=4'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple20/v4/5d/8c/0d/5d8c0d10-c218-a37a-780f-0b52785ad5f9/source/100x100bb.jpg'/></a>
     <p>A bite-sized Civilization-style strategy game. Build up a tribe and conquer all the enemy tribes before they conquer you! Does a great job of shrinking down classic 4X gameplay into a compact mobile game.</p>
@@ -413,12 +470,17 @@
 		<p>Easily the best single-button platformer on iOS. Absolutely gorgeous, and a dream to play. The precursor <a href="https://itunes.apple.com/us/app/rayman-jungle-run/id537931449?mt=8&uo=4&at=1010laM5">Rayman Jungle Run</a> is also good, but the second game is better.</p>
 	</div>
 
-
   <div class='game puzzle solo both-platforms' id='really-bad-chess'>
 		<h3><a href='https://itunes.apple.com/us/app/really-bad-chess/id1109751921?mt=8&uo=4&at=1010laM5'>Really Bad Chess</a></h3>
 		<a href='https://itunes.apple.com/us/app/really-bad-chess/id1109751921?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is4.mzstatic.com/image/thumb/Purple19/v4/12/bc/e3/12bce3a6-ca07-04e3-cb2c-4dd5e75ef5fb/source/100x100bb.jpg'/></a>
 		<p>Chess, but with a randomized arrangement of pieces. It's a simple concept, but one that works phenomentally well, even for people (like me!) who didn't think they liked chess.</p>
-	</div>
+  </div>
+
+  <div class='game action local-multi ipad' id='recurse'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/recurse/id524371030?mt=8&at=1010laM5">Recurse</a> (iPad)</h3>
+      <a href="https://geo.itunes.apple.com/us/app/recurse/id524371030?mt=8&at=1010laM5"><img class='icon' src="http://a1108.phobos.apple.com/us/r30/Purple/v4/86/89/33/8689333f-1c4a-14b8-28bd-c1ba361f9507/mzl.yuzgfjqm.png"/></a>
+      <p>Recurse is an iPad game that feels like it belongs on the Kinect. It uses the front-facing camera to use your body as input, tasking you with challenges that essentially force you to look silly in front of your friends.</p>
+    </div>
 
   <div class='game strategy solo both-platforms' id='reigns'>
 		<h3><a href='https://itunes.apple.com/us/app/reigns/id1114127463?mt=8&uo=4&at=1010laM5'>Reigns</a></h3>
@@ -474,7 +536,7 @@
     <p>[the Sequence] is a puzzle game that has you arranging a set of components on a physical grid in order to create a specific reaction. It feels like a minimalist version of <strong>Spacechem</strong>, which is a really cool (and difficult!) thing to pull off.</p>
   </div>
 
-  <div class='game solo both-platforms action online' id='skullgirls'>
+  <div class='game solo both-platforms action realtime-multi online' id='skullgirls'>
 		<h3><a href='https://itunes.apple.com/us/app/skullgirls/id1098137253?mt=8&uo=4&at=1010laM5'>Skullgirls</a></h3>
 		<a href='https://itunes.apple.com/us/app/skullgirls/id1098137253?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is2.mzstatic.com/image/thumb/Purple117/v4/58/a7/5c/58a75cbd-2ec0-36ab-3c56-4b2c26308990/source/100x100bb.jpg'/></a>
 		<p>The best 2D fighting game I've played on iOS. It's strongly in the mold of free-to-play games like <em>Injustice: Gods Among Us</em>, but it's a cut above the rest both in terms of production values and tactical depth.</p>
@@ -502,18 +564,30 @@
     <p>A trippy, psychedelic take on the classic arcade game. It feels like halfway between a rhythm game and a classic shmup.</p>
   </div>
 
-  <div class='game strategy solo local both-platforms' id='strategery'>
+  <div class='game action strategy local-multi both-platforms' id='spaceteam'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/spaceteam/id570510529?mt=8&at=1010laM5">Spaceteam</a></h3>
+      <a href="https://geo.itunes.apple.com/us/app/spaceteam/id570510529?mt=8&at=1010laM5"><img class='icon' src="http://a92.phobos.apple.com/us/r30/Purple4/v4/8c/b9/3b/8cb93b7c-7f1e-376b-4666-626246fc9a15/mzl.kuxvahnw.jpg"/></a>
+      <p>Spaceteam is ultimately a game about shouting at your friends. It's an absolutely phenomenal party game for gamers and non-gamers alike. It also happens to be free.</p>
+    </div>
+
+  <div class='game strategy solo local both-platforms async-multi realtime-multi' id='strategery'>
     <h3><a href="https://geo.itunes.apple.com/us/app/strategery/id298908505?mt=8&at=1010laM5">Strategery</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/strategery/id298908505?mt=8&at=1010laM5"><img class='icon' src="http://a296.phobos.apple.com/us/r30/Purple/v4/fb/0a/6f/fb0a6fa5-2611-e938-4f19-a07a31f32de8/mzl.iggvgzkk.jpg"/></a>
     <p>Strategery is essentially an abstract version of Risk. Between a randomized game board and a wealth of customizable settings, it's very difficult to get bored with Strategery. Lots of multiplayer options as well.</p>
   </div>
+
+  <div class='game strategy online async-multi both-platforms' id='subterfuge'>
+      <h3><a href='https://geo.itunes.apple.com/us/app/subterfuge/id702951905?mt=8&at=1010laM5'>Subterfuge</a></h3>
+      <a href='https://geo.itunes.apple.com/us/app/subterfuge/id702951905?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/thumb/Purple6/v4/17/f9/29/17f929e7-a54f-74e9-7f19-2d05bf530eb3/mzl.tqycuovv.png/0x0ss-85.jpg'/></a>
+      <p>A <strong>Diplomacy</strong>-esque game of naval warfare about negotiating with and strategizing against your friends. Notably, ships move in real-time; a full game takes seven days to complete.</p>
+    </div>
 
   <div class='game action solo both-platforms' id='super-hexagon'>
     <h3><a href="https://geo.itunes.apple.com/us/app/super-hexagon/id549027629?mt=8&at=1010laM5">Super Hexagon</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/super-hexagon/id549027629?mt=8&at=1010laM5"><img class='icon' src="http://a820.phobos.apple.com/us/r30/Purple/v4/9a/1f/e8/9a1fe8e4-2d1b-3a0c-2778-a9e3d82a2199/mzl.grebaimp.png"/></a><p>Super Hexagon is a game about getting lost in a state of flow. I love it for its hypnotic visuals and sound, perfectly-responsive controls, and sheer ball-busting difficulty. It's insanely difficult, but never cheap.
   </div>
 
-  <div class='game action solo online both-platforms' id='super-mario-run'>
+  <div class='game action solo online both-platforms async-multi' id='super-mario-run'>
 		<h3><a href='https://itunes.apple.com/us/app/super-mario-run/id1145275343?mt=8&uo=4&at=1010laM5'>Super Mario Run</a></h3>
 		<a href='https://itunes.apple.com/us/app/super-mario-run/id1145275343?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is3.mzstatic.com/image/thumb/Purple111/v4/d1/e1/2b/d1e12bc9-4d92-3ad1-17c9-a181b97e7a8b/source/100x100bb.jpg'/></a>
 		<p>It's a Mario game, on your phone. It borrows elements from one-button phone runners, and it's more of a score attack than most other Mario platformers, but it's very distinctly Mario.</p>
@@ -553,6 +627,12 @@
     <p>A moderately fun stream-based puzzle game wrapped in a pitch-perfect framing narrative. TouchTone tells an NSA-like story of government surveillance, contextualizing your puzzles as helping enact wiretaps.</p>
   </div>
 
+  <div class='game strategy local-multi both-platforms' id='triple-agent'>
+      <h3><a href='https://itunes.apple.com/us/app/triple-agent/id1247445624?mt=8&uo=4&at=1010laM5'>Triple Agent</a></h3>
+      <a href='https://itunes.apple.com/us/app/triple-agent/id1247445624?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple128/v4/71/fc/fd/71fcfd1b-25d6-5d76-22a2-371e3f97dda2/source/100x100bb.jpg'/></a>
+      <p>A fantastic Werewolf-style social deduction game played using just a single phone. It needs at least 5 people, but it's great fun for a party.</p>
+    </div>
+
   <div class='game puzzle solo both-platforms' id='triple-town'>
     <h3><a href="https://geo.itunes.apple.com/us/app/triple-town/id490532168?mt=8&at=1010laM5">Triple Town</a></h3>
     <a href="https://geo.itunes.apple.com/us/app/triple-town/id490532168?mt=8&at=1010laM5"><img class='icon' src="http://a1433.phobos.apple.com/us/r30/Purple4/v4/3c/b4/53/3cb45362-890e-916f-9fb0-56aade22e6b6/mzl.jiabcfxx.png"/></a>
@@ -565,7 +645,7 @@
 		<p>A refreshing new take on word puzzles. The normal game didn't particulary grab me, but the "clue puzzles" are a great fresh take on crosswords.</p>
 	</div>
 
-  <div class='game action strategy online both-platforms' id='vainglory'>
+  <div class='game action strategy online both-platforms realtime-multi' id='vainglory'>
     <h3><a href='https://geo.itunes.apple.com/us/app/vainglory/id671464704?mt=8&at=1010laM5'>Vainglory</a></h3>
     <a href='https://geo.itunes.apple.com/us/app/vainglory/id671464704?mt=8&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/pf/us/r30/Purple1/v4/b4/36/77/b43677bd-f6d8-be56-9298-e0b4a5c66d9b/mzl.nnuosmog.png'/></a>
     <p>A fantastic free-to-play mobile MOBA. It's far simpler and more approachable than LoL or DOTA, making it a great introduction to the genre for folks looking for a strategic team-based multiplayer action.</p>
@@ -583,7 +663,15 @@
     <p>A great Advance Wars-style strategy game. The game is remarkably similar to Advane Wars, even down to the overall theming, but it's unbelievably polished and has lots of character.</p>
   </div>
 
-  <div class='game solo action both-platforms online' id='world-of-tanks-blitz'>
+  <div class='game strategy words async-multi online local both-platforms' id='words-with-friends'>
+      <h3><a href="https://geo.itunes.apple.com/us/app/words-with-friends/id322852954?mt=8&at=1010laM5">Words With Friends</a></h3>
+      <a href="https://geo.itunes.apple.com/us/app/words-with-friends/id322852954?mt=8&at=1010laM5"><img class='icon' src="http://a1647.phobos.apple.com/us/r30/Purple4/v4/29/e8/d2/29e8d208-2a63-cc36-28e5-6e11d170d61f/mzl.rzjcwkwx.png"/></a>
+      <p>It's Scrabble, on your phone. You've probably heard of it, but if you haven't, check it out. The board, point values, and letter distributions are tweaked from Scrabble to make games more exciting and higher-scoring.</p>
+
+      <p>(Full disclosure: I used to work on the Facebook version of WWF.)</p>
+    </div>
+
+  <div class='game solo action both-platforms online realtime-multi' id='world-of-tanks-blitz'>
       <h3><a href='https://itunes.apple.com/us/app/world-of-tanks-blitz/id859204347?mt=8&uo=4&at=1010laM5'>World of Tanks Blitz</a></h3>
       <a href='https://itunes.apple.com/us/app/world-of-tanks-blitz/id859204347?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple118/v4/99/fb/fb/99fbfb7b-7911-fea4-fc21-eab419539610/source/100x100bb.jpg'/></a>
       <p>The controls are awkward, the free-to-play elements obnoxious. But it's your best choice if you want a team-based online shooter, and it's pretty darn good.</p>
@@ -602,96 +690,6 @@
 	</div>
 </div></div>
 
-<div class='async section'>
-    <div class='inner'>
-  <h2>Asyncronous Online Multiplayer</h2>
-
-  <div class='game strategy words online both-platforms' id='letterpress'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/letterpress-word-game/id526619424?mt=8&at=1010laM5">Letterpress</a></h3>
-    <a href="https://geo.itunes.apple.com/us/app/letterpress-word-game/id526619424?mt=8&at=1010laM5"><img class='icon' src="http://a609.phobos.apple.com/us/r30/Purple4/v4/39/f9/5a/39f95afe-fbd2-5a7f-65a3-1c6d6bf310e7/mzl.qjpgaswa.png"/></a>
-    <p>A genius game by Loren Brichter (aka "the guy who invented pull-to-refresh"). It's ostensibly a "word game", but it's really a territory control game that just happens to use a Boggle-esque word finding mechanic.</p>
-  </div>
-
-  <div class='game strategy online both-platforms' id='subterfuge'>
-    <h3><a href='https://geo.itunes.apple.com/us/app/subterfuge/id702951905?mt=8&at=1010laM5'>Subterfuge</a></h3>
-    <a href='https://geo.itunes.apple.com/us/app/subterfuge/id702951905?mt=8&at=1010laM5'><img class='icon' src='http://is5.mzstatic.com/image/thumb/Purple6/v4/17/f9/29/17f929e7-a54f-74e9-7f19-2d05bf530eb3/mzl.tqycuovv.png/0x0ss-85.jpg'/></a>
-    <p>A <strong>Diplomacy</strong>-esque game of naval warfare about negotiating with and strategizing against your friends. Notably, ships move in real-time; a full game takes seven days to complete.</p>
-  </div>
-
-  <div class='game strategy words online local both-platforms' id='words-with-friends'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/words-with-friends/id322852954?mt=8&at=1010laM5">Words With Friends</a></h3>
-    <a href="https://geo.itunes.apple.com/us/app/words-with-friends/id322852954?mt=8&at=1010laM5"><img class='icon' src="http://a1647.phobos.apple.com/us/r30/Purple4/v4/29/e8/d2/29e8d208-2a63-cc36-28e5-6e11d170d61f/mzl.rzjcwkwx.png"/></a>
-    <p>It's Scrabble, on your phone. You've probably heard of it, but if you haven't, check it out. The board, point values, and letter distributions are tweaked from Scrabble to make games more exciting and higher-scoring.</p>
-
-    <p>(Full disclosure: I used to work on the Facebook version of WWF.)</p>
-  </div>
-</div></div>
-
-<div class='local section'><div class='inner'>
-  <h2>Local Multiplayer</h2>
-
-  <div class='game strategy local ipad' id='artemis'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/artemis-spaceship-bridge-simulator/id578372500?mt=8&at=1010laM5">Artemis</a></h3>
-    <a href="https://geo.itunes.apple.com/us/app/artemis-spaceship-bridge-simulator/id578372500?mt=8&at=1010laM5"><img class='icon' src="http://a1271.phobos.apple.com/us/r30/Purple6/v4/2f/76/f7/2f76f7ba-5a09-910f-0504-bf02263d2295/mzl.vbkngult.png"/></a>
-    Artemis is basically a computer-aided Star Trek LARP. Your team of 4-5 players, each with their own device and distinct role, need to work together as a crew to steer the ship and accomplish various missions. Totally nerdy, and totally great.</p>
-  </div>
-
-  <div class='game action local ipad' id='bloop'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/bloop-tabletop-finger-frenzy/id517320341?mt=8&at=1010laM5">Bloop</a> (iPad)</h3>
-    <a href="https://geo.itunes.apple.com/us/app/bloop-tabletop-finger-frenzy/id517320341?mt=8&at=1010laM5"><img class='icon' src="http://a74.phobos.apple.com/us/r30/Purple2/v4/36/40/dd/3640ddeb-4487-fc42-5f5f-413439078476/mzl.kozjohvf.png"/></a>
-    <p>A game of complete madness requiring everyone to madly tap on your iPad screen at the same time. This is pretty similar to Chicanery, which I enjoy a bit more, but Bloop is still worth your time.</p>
-  </div>
-
-  <div class='game atmosphere local iphone' id='bounden'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/bounden/id850456491?mt=8&at=1010laM5">Bounden</a></h3>
-    <a href="https://geo.itunes.apple.com/us/app/bounden/id850456491?mt=8&at=1010laM5"><img class='icon' src="http://is5.mzstatic.com/image/pf/us/r30/Purple3/v4/e9/ed/d1/e9edd1bd-87a6-a0da-e7f4-ec6d73d99bfc/mzl.tvnluwkr.png"/></a>
-    <p>An absolutely beautiful collaborative dancing game. Two players, holding the same phone, will have to contort themselves in ways that create a wonderful abstract modern dance.</p>
-  </div>
-
-  <div class='game action local ipad' id='chicanery'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/chicanery/id395775628?mt=8&at=1010laM5">Chicanery</a> (iPad)</h3>
-    <a href="https://geo.itunes.apple.com/us/app/chicanery/id395775628?mt=8&at=1010laM5"><img class='icon' src="http://a1935.phobos.apple.com/us/r30/Purple/d8/67/36/mzi.juadbsfa.png"/></a>
-    <p>Each player must hold an on-screen button. If you let go of your button, you lose. You can do whatever you want to get your opponents to move their fingers off the screen (although preferably without any serious bodily harm).</p>
-  </div>
-
-  <div class='game puzzle local ipad' id='fingle'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/fingle/id490109661?mt=8&ign-mpt=uo%3D4">Fingle</a> / <a href="https://geo.itunes.apple.com/us/app/finger-tied/id533011708?mt=8&at=1010laM5?mt=8&at=1010laM5">Finger Tied</a> (iPad)</h3>
-    <a href="https://geo.itunes.apple.com/us/app/fingle/id490109661?mt=8&at=1010laM5"><img class='icon' src="http://a1632.phobos.apple.com/us/r30/Purple2/v4/df/9d/ed/df9dedff-2771-28b6-8f59-4fa70567ff82/mzl.gqkkvnsv.png"/></a>
-    <p>These two games are very similar, so I'm grouping them together. They both task you with solving puzzles by moving your fingers around the screen, inevitably getting them tangled up in the process.</p>
-  </div>
-
-    <div class='game action strategy local ipad' id='glitch-tank'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/glitch-tank/id490257878?mt=8&at=1010laM5">Glitch Tank</a> (iPad)</h3>
-    <a href="https://geo.itunes.apple.com/us/app/glitch-tank/id490257878?mt=8&at=1010laM5"><img class='icon' src="http://a734.phobos.apple.com/us/r30/Purple/v4/f1/6f/55/f16f550f-cea8-c261-063c-a834c67e563d/mzm.kbyjckpa.png"/></a>
-    <p>A 2-player head-to-head tank-battle game. Each time you use an action, its control is randomly replaced with another one. Add in other mechanics that complicate things, and it's easy to get overwhelmed in a good way.
-  </div>
-
-  <div class='game action strategy local ipad' id='olo'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/olo-game/id529826126?mt=8&at=1010laM5">OLO</a> (iPad)</h3>
-    <a href="https://geo.itunes.apple.com/us/app/olo-game/id529826126?mt=8&at=1010laM5"><img class='icon' src="http://a91.phobos.apple.com/us/r30/Purple6/v4/de/c6/68/dec66894-b793-3bba-c87b-05db3ef98c27/mzl.cykkqigv.png"/></a>
-    <p>OLO is a 2-player game similar to shuffleboard or crokinole. You and your opponent take turns flicking pucks across the screen. The physics feel as effortlessly natural as playing a physical game.</p>
-  </div>
-
-  <div class='game action local ipad' id='recurse'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/recurse/id524371030?mt=8&at=1010laM5">Recurse</a> (iPad)</h3>
-    <a href="https://geo.itunes.apple.com/us/app/recurse/id524371030?mt=8&at=1010laM5"><img class='icon' src="http://a1108.phobos.apple.com/us/r30/Purple/v4/86/89/33/8689333f-1c4a-14b8-28bd-c1ba361f9507/mzl.yuzgfjqm.png"/></a>
-    <p>Recurse is an iPad game that feels like it belongs on the Kinect. It uses the front-facing camera to use your body as input, tasking you with challenges that essentially force you to look silly in front of your friends.</p>
-  </div>
-
-  <div class='game action strategy local both-platforms' id='spaceteam'>
-    <h3><a href="https://geo.itunes.apple.com/us/app/spaceteam/id570510529?mt=8&at=1010laM5">Spaceteam</a></h3>
-    <a href="https://geo.itunes.apple.com/us/app/spaceteam/id570510529?mt=8&at=1010laM5"><img class='icon' src="http://a92.phobos.apple.com/us/r30/Purple4/v4/8c/b9/3b/8cb93b7c-7f1e-376b-4666-626246fc9a15/mzl.kuxvahnw.jpg"/></a>
-    <p>Spaceteam is ultimately a game about shouting at your friends. It's an absolutely phenomenal party game for gamers and non-gamers alike. It also happens to be free.</p>
-  </div>
-
-  <div class='game strategy local both-platforms' id='triple-agent'>
-      <h3><a href='https://itunes.apple.com/us/app/triple-agent/id1247445624?mt=8&uo=4&at=1010laM5'>Triple Agent</a></h3>
-      <a href='https://itunes.apple.com/us/app/triple-agent/id1247445624?mt=8&uo=4&at=1010laM5'><img class='icon' src='http://is1.mzstatic.com/image/thumb/Purple128/v4/71/fc/fd/71fcfd1b-25d6-5d76-22a2-371e3f97dda2/source/100x100bb.jpg'/></a>
-      <p>A fantastic Werewolf-style social deduction game played using just a single phone. It needs at least 5 people, but it's great fun for a party.</p>
-    </div>
-</div>
-</div>
-
 <div class='other section'><div class='inner'>
   <h2>Some more games!</h2>
   <p>Worked your way through everything I've mentioned and still want more? I try to keep the main list relatively trim, but here are some other games I've really enjoyed.</p>
@@ -707,7 +705,7 @@
     <li class="solo both-platforms story online" id="city-of-love"><a href='https://itunes.apple.com/us/app/city-of-love-paris/id1146752671?mt=8&uo=4&at=1010laM5'>City of Love: Paris</a>: The best of the various casual interactive romance novel games for iOS. Pure unadulerated pulp fiction.</li>
     <li class='action solo online both-platforms' id='crossy-road'><a href='https://itunes.apple.com/us/app/crossy-road-endless-arcade/id924373886?mt=8&uo=4'>Crossy Road</a>: A modern F2P take on Frogger. If you haven't played it, you've played one of the countless games it's inspired.</li>
     <li class="story strategy solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/dark-echo/id951177560?mt=8&at=1010laM5'>Dark Echo</a>: A unique horror game where your character navigates via echolocation.</li>
-    <li class="puzzle story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/does-not-commute/id971756507?mt=8&at=1010laM5'>Does not Commute</a>: A fun traffic-routing puzzle game with top-knotch writing.</li>
+    <li class="puzzle story solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/does-not-commute/id971756507?mt=8&at=1010laM5'>Does Not Commute</a>: A fun traffic-routing puzzle game with top-knotch writing.</li>
     <li class="puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/dots-a-game-about-connecting/id632285588?mt=8&at=1010laM5">Dots</a>: A matching puzzle game with a beautiful minimalist aesthetic. There's an expanded sequel, but I like the original better.</li>
     <li class="puzzle solo both-platforms"><a href="https://geo.itunes.apple.com/us/app/dungelot/id590247444?mt=8&at=1010laM5">Dungelot</a>: Roughly speaking, a roguelike Minesweeper game.</li>
     <li class='puzzle solo both-platforms'><a href='https://itunes.apple.com/us/app/ending/id647697139?mt=8&uo=4&at=1010laM5'>Ending</a>: A minimalist puzzle-y Roguelike.</li>
@@ -737,8 +735,7 @@
     <li class="action both-platforms"><a href='https://itunes.apple.com/us/app/war-tortoise/id1087489471?mt=8&uo=4&at=1010laM5'>War Tortoise</a>: An idle clicker crossed with a turret shooter. Pretty novel idea!</li>
     <li class="puzzle solo both-platforms"><a href='https://geo.itunes.apple.com/us/app/wargames-wopr/id528382306?mt=8&at=1010laM5'>WarGames: WOPR</a>: A Dungeon Raid clone that's wonderfully themed around the classic 80s movie.</li>
     <li class="puzzle solo ipad"><a href="https://geo.itunes.apple.com/us/app/world-of-goo/id415997203?mt=8&at=1010laM5">World of Goo</a> (iPad): A physics-based bridge-building simulator where the basic unit of construction is a blob of goo. Playing this on an iPad is a much more fun experience than using a mouse.</li>
-    <li class="strategy solo online ipad"><a href="https://geo.itunes.apple.com/us/app/yomi/id594630025?mt=8&at=1010laM5">Yomi</a> (iPad): A wonderful game by David Sirlin that's best described as "a fighting game in card form". The game design is fantastic, but the iPad presentation is a bit clunky.</li>
-    <li class="strategy online both-platforms"><a href="https://geo.itunes.apple.com/us/app/zynga-poker-texas-holdem/id354902315?mt=8&at=1010laM5">Zynga Poker</a>: A surprisingly good Texas Hold 'Em game. Has in-app purchases, but it's loose enough with free chips I've never had to pay.</li>
+    <li class="strategy online solo realtime-multi both-platforms"><a href="https://geo.itunes.apple.com/us/app/zynga-poker-texas-holdem/id354902315?mt=8&at=1010laM5">Zynga Poker</a>: A surprisingly good Texas Hold 'Em game. Has in-app purchases, but it's loose enough with free chips I've never had to pay.</li>
   </ul>
 </div></div>
 
